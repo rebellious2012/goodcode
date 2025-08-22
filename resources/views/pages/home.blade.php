@@ -1,0 +1,13 @@
+@extends('layouts.app')
+
+@section('title', 'TechFlow Solutions - Leading IT Company | Custom Software Development')
+
+@section('content')
+    @include('components.hero')
+    @include('components.services')
+    @include('components.why-us')
+    @include('components.portfolio')
+    @include('components.cta')
+    @include('components.contact-form')
+@endsection
+

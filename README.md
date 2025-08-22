@@ -1,61 +1,115 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# TechFlow Solutions - Corporate IT Company Website
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Современный корпоративный сайт IT-компании, созданный с использованием Flask + TailwindCSS в стиле Laravel Blade компонентов.
 
-## About Laravel
+## Особенности
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- **Современный дизайн**: Минималистичный стиль с глубокими цветами и яркими акцентами
+- **Цветовая палитра**: Глубокий синий (#0f172a), яркий индиго (#6366f1), яркий циан (#22d3ee)
+- **Адаптивная верстка**: Mobile-first подход с TailwindCSS
+- **Компонентная архитектура**: Разделение на layout и content-блоки
+- **Интерактивность**: Alpine.js для динамических элементов
+- **Переключатель языков**: EN/PL с флагами в шапке
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Структура проекта
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+```
+it-company-website/
+├── app.py                          # Flask приложение
+├── app/
+│   ├── templates/                  # HTML шаблоны
+│   │   ├── base.html              # Базовый layout
+│   │   ├── home.html              # Главная страница
+│   │   ├── about.html             # О нас
+│   │   └── components/            # Компоненты
+│   │       ├── header.html        # Шапка сайта
+│   │       ├── footer.html        # Футер
+│   │       ├── services.html      # Блок услуг
+│   │       ├── portfolio.html     # Блок портфолио
+│   │       ├── cta.html          # Call-to-action
+│   │       └── contact-form.html  # Форма контакта
+│   └── static/                    # Статические файлы
+└── resources/views/               # Оригинальные Blade шаблоны
+    ├── layouts/
+    ├── components/
+    └── pages/
+```
 
-## Learning Laravel
+## Страницы
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+1. **Главная** (`/`) - Hero секция, услуги, преимущества, кейсы, CTA, форма контакта
+2. **О нас** (`/about`) - Миссия, команда, ценности
+3. **Услуги** (`/services`) - Список услуг с подробными описаниями
+4. **Портфолио** (`/portfolio`) - Кейсы с фильтрацией по категориям
+5. **Блог** (`/blog`) - Список статей + детальные страницы
+6. **Контакты** (`/contact`) - Форма, карта, соцсети
+7. **404** - Кастомная страница ошибки
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Установка и запуск
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### Требования
+- Flask
 
-## Laravel Sponsors
+### Запуск локально
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+1. Установите Flask:
+```bash
+pip install flask
+```
 
-### Premium Partners
+2. Перейдите в директорию проекта:
+```bash
+cd it-company-website
+```
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+3. Запустите приложение:
+```bash
+python app.py
+```
 
-## Contributing
+4. Откройте браузер и перейдите по адресу: `http://localhost:5000`
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Развертывание
 
-## Code of Conduct
+Для продакшн развертывания рекомендуется использовать:
+- **Gunicorn** как WSGI сервер
+- **Nginx** как reverse proxy
+- **Docker** для контейнеризации
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Пример запуска с Gunicorn:
+```bash
+pip install gunicorn
+gunicorn -w 4 -b 0.0.0.0:5000 app:app
+```
 
-## Security Vulnerabilities
+## Технологии
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+- **Backend**: Flask (Python)
+- **Frontend**: TailwindCSS, Alpine.js
+- **Стилизация**: Только TailwindCSS (без кастомного CSS)
+- **Интерактивность**: Alpine.js (без кастомного JavaScript)
+- **Архитектура**: Компонентный подход в стиле Laravel Blade
 
-## License
+## Особенности реализации
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+- Все изображения заменены на плейсхолдеры
+- Тексты на английском языке, маркетинговые
+- Минимум lorem ipsum, осмысленные заголовки и описания
+- Переключатель языка EN/PL в шапке с флагами
+- Адаптивная верстка, mobile-first подход
+- Современные градиенты и анимации
+- Hover эффекты и плавные переходы
+
+## Контент
+
+Сайт содержит реалистичный контент для IT-компании:
+- Описания услуг (разработка ПО, облачные решения, мобильные приложения)
+- Кейсы проектов (e-commerce, fintech, healthcare)
+- Информация о команде и ценностях компании
+- Технические статьи в блоге
+- Контактная информация
+
+## Лицензия
+
+Этот проект создан для демонстрационных целей.
+

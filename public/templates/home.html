@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block title %}TechFlow Solutions - Leading IT Company | Custom Software Development{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <!-- Background gradient -->
+    <div class="absolute inset-0 bg-gradient-to-br from-deep-blue via-slate-900 to-slate-800"></div>
+    
+    <!-- Animated background elements -->
+    <div class="absolute inset-0 opacity-20">
+        <div class="absolute top-1/4 left-1/4 w-64 h-64 bg-bright-indigo rounded-full mix-blend-multiply filter blur-xl animate-pulse"></div>
+        <div class="absolute top-3/4 right-1/4 w-64 h-64 bg-bright-cyan rounded-full mix-blend-multiply filter blur-xl animate-pulse animation-delay-2000"></div>
+    </div>
+    
+    <div class="relative z-10 container mx-auto px-4 text-center">
+        <div class="max-w-4xl mx-auto">
+            <!-- Main headline -->
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                Transform Your Business with 
+                <span class="bg-gradient-to-r from-bright-indigo to-bright-cyan bg-clip-text text-transparent">
+                    Cutting-Edge Technology
+                </span>
+            </h1>
+            
+            <!-- Subheadline -->
+            <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
+                We deliver innovative software solutions, cloud infrastructure, and digital transformation strategies that drive growth and competitive advantage for forward-thinking companies.
+            </p>
+            
+            <!-- CTA buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+                <a href="/contact" class="bg-gradient-to-r from-bright-indigo to-bright-cyan text-white px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-lg hover:shadow-bright-indigo/25 transition-all duration-300 transform hover:-translate-y-1">
+                    Start Your Project
+                </a>
+                <a href="/portfolio" class="border-2 border-bright-cyan text-bright-cyan px-8 py-4 rounded-lg font-semibold text-lg hover:bg-bright-cyan hover:text-deep-blue transition-all duration-300">
+                    View Our Work
+                </a>
+            </div>
+            
+            <!-- Trust indicators -->
+            <div class="flex flex-wrap justify-center items-center gap-8 text-gray-400">
+                <div class="flex items-center space-x-2">
+                    <span class="text-bright-cyan text-2xl font-bold">500+</span>
+                    <span>Projects Delivered</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <span class="text-bright-cyan text-2xl font-bold">98%</span>
+                    <span>Client Satisfaction</span>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <span class="text-bright-cyan text-2xl font-bold">24/7</span>
+                    <span>Support Available</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Scroll indicator -->
+    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+        <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+        </svg>
+    </div>
+</section>
+
+<!-- Services Section -->
+{% include 'components/services.html' %}
+
+<!-- Why Us Section -->
+{% include 'components/why-us.html' %}
+
+<!-- Portfolio Section -->
+{% include 'components/portfolio.html' %}
+
+<!-- CTA Section -->
+{% include 'components/cta.html' %}
+
+<!-- Contact Form Section -->
+{% include 'components/contact-form.html' %}
+{% endblock %}
+
