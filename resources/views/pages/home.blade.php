@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'TechFlow Solutions - Leading IT Company | Custom Software Development')
+@section('title', 'CodElevator - Leading IT Company | Custom Software Development')
 
 @section('content')
     @include('components.hero')

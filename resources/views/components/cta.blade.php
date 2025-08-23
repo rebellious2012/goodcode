@@ -15,6 +15,9 @@
                 <a href="tel:+15551234567" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-bright-indigo transition-all duration-300">
                     Call Now: +1 (555) 123-4567
                 </a>
+                <a href="https://wa.me/48883219797" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-bright-indigo transition-all duration-300" target="_blank" rel="noopener">
+    WhatsApp: +48 883 219 797
+</a>
             </div>
             
             <div class="flex flex-wrap justify-center items-center gap-8 text-white/80">

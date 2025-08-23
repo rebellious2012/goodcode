@@ -3,7 +3,7 @@
         <div class="flex justify-between items-center">
             <!-- Logo -->
             <a href="/" class="text-2xl font-bold text-white hover:text-bright-cyan transition-colors duration-300">
-                TechFlow<span class="text-bright-indigo">Solutions</span>
+                Cod<span class="text-bright-indigo">Elevator</span>
             </a>
             
             <!-- Desktop Navigation -->
