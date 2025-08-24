@@ -5,46 +5,43 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
-use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\URL;
 
 class SetLocale
 {
-    /**
-     * Handle an incoming request.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
-     * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
-     */
     public function handle(Request $request, Closure $next)
     {
-         $supportedLocales = config('app.supported_locales', ['en']); 
-        $defaultLocale = config('app.locale', 'en');
-
-        // 2. Получаем локаль из первого сегмента URL
+        $supportedLocales = config('app.supported_locales');
+        $defaultLocale = config('app.locale');
         $locale = $request->segment(1);
 
-        // 3. Проверяем, поддерживается ли эта локаль
+        // If the URL segment is a supported locale...
         if (in_array($locale, $supportedLocales)) {
-
-            // 4. ГЛАВНОЕ УЛУЧШЕНИЕ: Если локаль в URL - это язык по умолчанию, делаем редирект
+            // If the locale in the URL is the default locale (e.g., /en/about)...
             if ($locale === $defaultLocale) {
-                // Создаем новый URL, убрав языковой префикс (например, /en/about -> /about)
-                $newPath = substr($request->getPathInfo(), 3); // Убираем первые 3 символа: /en
-                if (empty($newPath)) {
-                    $newPath = '/';
+                // ...we redirect to the URL without the prefix (e.g., /about).
+                // This is good for SEO and keeps URLs clean.
+                $path = $request->path();
+                // Replace '/en' with '' only at the beginning of the path
+                $newPath = preg_replace("/^$defaultLocale/", '', $path, 1);
+                // Ensure the path starts with a slash
+                if (strpos($newPath, '/') !== 0) {
+                    $newPath = '/' . $newPath;
                 }
-                // Делаем 301 редирект для SEO
                 return Redirect::to($newPath, 301);
             }
 
-            // 5. Если это не язык по умолчанию, устанавливаем его
+            // If it's a non-default locale (e.g., 'pl'), set it.
             App::setLocale($locale);
+            // This ensures that any URLs generated during this request
+            // will have the correct 'locale' parameter by default.
             URL::defaults(['locale' => $locale]);
-         } else {
-            // Если в URL нет локали, мы просто используем локаль по умолчанию
-            // URL::defaults здесь не нужен, т.к. роуты для языка по умолчанию не должны иметь параметр {locale}
+        } else {
+            // If the URL does not contain a locale prefix, we use the default.
+            // We don't need to set URL::defaults here because the default routes
+            // do not have a {locale} parameter.
+            App::setLocale($defaultLocale);
         }
 
         return $next($request);
