@@ -11,17 +11,16 @@ if (!function_exists('getLocalizedURL')) {
         $currentRouteName = Illuminate\Support\Facades\Route::currentRouteName();
         $currentRouteParams = Illuminate\Support\Facades\Route::current()->parameters();
 
-        // Если мы хотим переключиться на язык по умолчанию, префикс не нужен
+        // When switching to the default locale, we need a URL without a prefix.
         if ($targetLocale === $defaultLocale) {
-            // Убираем 'locale.' из имени роута, если оно там есть
             $routeName = str_replace('locale.', '', $currentRouteName);
-            // Убираем параметр 'locale' из параметров
             unset($currentRouteParams['locale']);
-            return route($routeName, $currentRouteParams);
+            // Generate a relative path first (3rd parameter `false`) and then convert to a clean absolute URL.
+            // This prevents the router from accidentally adding the '/en/' prefix based on context.
+            return url(route($routeName, $currentRouteParams, false));
         }
 
-        // Если мы переключаемся на другой язык
-        // Убедимся, что имя роута содержит префикс 'locale.'
+        // When switching to a non-default locale, we need the 'locale.' prefixed route.
         if (!str_starts_with($currentRouteName, 'locale.')) {
             $currentRouteName = 'locale.' . $currentRouteName;
         }
