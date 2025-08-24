@@ -8,12 +8,12 @@
             
             <!-- Desktop Navigation -->
             <ul class="hidden md:flex space-x-8">
-                <li><a href="/" class="text-gray-300 hover:text-bright-cyan transition-colors duration-300 font-medium">Home</a></li>
-                <li><a href="/about" class="text-gray-300 hover:text-bright-cyan transition-colors duration-300 font-medium">About Us</a></li>
-                <li><a href="/services" class="text-gray-300 hover:text-bright-cyan transition-colors duration-300 font-medium">Services</a></li>
-                <li><a href="/portfolio" class="text-gray-300 hover:text-bright-cyan transition-colors duration-300 font-medium">Portfolio</a></li>
-                <li><a href="/blog" class="text-gray-300 hover:text-bright-cyan transition-colors duration-300 font-medium">Blog</a></li>
-                <li><a href="/contact" class="text-gray-300 hover:text-bright-cyan transition-colors duration-300 font-medium">Contact</a></li>
+                <li><a href="/" class="text-gray-300 hover:text-bright-cyan transition-colors duration-300 font-medium">{{ __('app.header_home') }}</a></li>
+                <li><a href="/about" class="text-gray-300 hover:text-bright-cyan transition-colors duration-300 font-medium">{{ __('app.header_about') }}</a></li>
+                <li><a href="/services" class="text-gray-300 hover:text-bright-cyan transition-colors duration-300 font-medium">{{ __('app.header_services') }}</a></li>
+                <li><a href="/portfolio" class="text-gray-300 hover:text-bright-cyan transition-colors duration-300 font-medium">{{ __('app.header_portfolio') }}</a></li>
+                <li><a href="/blog" class="text-gray-300 hover:text-bright-cyan transition-colors duration-300 font-medium">{{ __('app.header_blog') }}</a></li>
+                <li><a href="/contact" class="text-gray-300 hover:text-bright-cyan transition-colors duration-300 font-medium">{{ __('app.header_contact') }}</a></li>
             </ul>
             
             <!-- Language Switcher -->
@@ -41,12 +41,12 @@
         <!-- Mobile Navigation -->
         <div class="md:hidden mt-4 pb-4 border-t border-slate-800" x-data="{ open: false }" x-show="open" x-transition>
             <ul class="space-y-2 pt-4">
-                <li><a href="/" class="block text-gray-300 hover:text-bright-cyan transition-colors duration-300 font-medium py-2">Home</a></li>
-                <li><a href="/about" class="block text-gray-300 hover:text-bright-cyan transition-colors duration-300 font-medium py-2">About Us</a></li>
-                <li><a href="/services" class="block text-gray-300 hover:text-bright-cyan transition-colors duration-300 font-medium py-2">Services</a></li>
-                <li><a href="/portfolio" class="block text-gray-300 hover:text-bright-cyan transition-colors duration-300 font-medium py-2">Portfolio</a></li>
-                <li><a href="/blog" class="block text-gray-300 hover:text-bright-cyan transition-colors duration-300 font-medium py-2">Blog</a></li>
-                <li><a href="/contact" class="block text-gray-300 hover:text-bright-cyan transition-colors duration-300 font-medium py-2">Contact</a></li>
+                <li><a href="/" class="block text-gray-300 hover:text-bright-cyan transition-colors duration-300 font-medium py-2">{{ __('app.header_home') }}</a></li>
+                <li><a href="/about" class="block text-gray-300 hover:text-bright-cyan transition-colors duration-300 font-medium py-2">{{ __('app.header_about') }}</a></li>
+                <li><a href="/services" class="block text-gray-300 hover:text-bright-cyan transition-colors duration-300 font-medium py-2">{{ __('app.header_services') }}</a></li>
+                <li><a href="/portfolio" class="block text-gray-300 hover:text-bright-cyan transition-colors duration-300 font-medium py-2">{{ __('app.header_portfolio') }}</a></li>
+                <li><a href="/blog" class="block text-gray-300 hover:text-bright-cyan transition-colors duration-300 font-medium py-2">{{ __('app.header_blog') }}</a></li>
+                <li><a href="/contact" class="block text-gray-300 hover:text-bright-cyan transition-colors duration-300 font-medium py-2">{{ __('app.header_contact') }}</a></li>
             </ul>
         </div>
     </nav>
