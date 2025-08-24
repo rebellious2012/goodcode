@@ -1,4 +1,4 @@
-<section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+<section class="relative min-h-screen flex flex-col items-center justify-center overflow-hidden">
     <!-- Background gradient -->
     <div class="absolute inset-0 bg-gradient-to-br from-deep-blue via-slate-900 to-slate-800"></div>
     
@@ -12,50 +12,42 @@
         <div class="max-w-4xl mx-auto">
             <!-- Main headline -->
             <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
-                Transform Your Business with 
+                {{ __('home.title_part1') }}
                 <span class="bg-gradient-to-r from-bright-indigo to-bright-cyan bg-clip-text text-transparent">
-                    Cutting-Edge Technology
+                    {{ __('home.title_highlight') }}
                 </span>
             </h1>
             
             <!-- Subheadline -->
             <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto leading-relaxed">
-                We deliver innovative software solutions, cloud infrastructure, and digital transformation strategies that drive growth and competitive advantage for forward-thinking companies.
+                {{ __('home.subtitle') }}
             </p>
             
             <!-- CTA buttons -->
-            <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
-                <a href="/contact" class="bg-gradient-to-r from-bright-indigo to-bright-cyan text-white px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-lg hover:shadow-bright-indigo/25 transition-all duration-300 transform hover:-translate-y-1">
-                    Start Your Project
+            <div class="flex justify-center gap-4 mb-10">
+                <a href="#contact" class="btn btn-primary px-6 py-3 bg-bright-indigo hover:bg-bright-cyan text-white rounded-lg font-semibold shadow-lg transition duration-300">
+                    {{ __('home.cta_primary') }}
                 </a>
-                <a href="/portfolio" class="border-2 border-bright-cyan text-bright-cyan px-8 py-4 rounded-lg font-semibold text-lg hover:bg-bright-cyan hover:text-deep-blue transition-all duration-300">
-                    View Our Work
+                <a href="#services" class="btn btn-outline px-6 py-3 border-2 border-bright-indigo hover:bg-bright-indigo text-white rounded-lg font-semibold transition duration-300">
+                    {{ __('home.cta_secondary') }}
                 </a>
             </div>
-            
+
             <!-- Trust indicators -->
             <div class="flex flex-wrap justify-center items-center gap-8 text-gray-400">
                 <div class="flex items-center space-x-2">
-                    <span class="text-bright-cyan text-2xl font-bold">500+</span>
-                    <span>Projects Delivered</span>
+                    <span class="text-bright-cyan text-2xl font-bold">{{ __('home.stat_projects') }}</span>
+                    <span>{{ __('home.stat_projects_text') }}</span>
                 </div>
                 <div class="flex items-center space-x-2">
-                    <span class="text-bright-cyan text-2xl font-bold">98%</span>
-                    <span>Client Satisfaction</span>
+                    <span class="text-bright-cyan text-2xl font-bold">{{ __('home.stat_satisfaction') }}</span>
+                    <span>{{ __('home.stat_satisfaction_text') }}</span>
                 </div>
                 <div class="flex items-center space-x-2">
-                    <span class="text-bright-cyan text-2xl font-bold">24/7</span>
-                    <span>Support Available</span>
+                    <span class="text-bright-cyan text-2xl font-bold">{{ __('home.stat_support') }}</span>
+                    <span>{{ __('home.stat_support_text') }}</span>
                 </div>
             </div>
         </div>
     </div>
-    
-    <!-- Scroll indicator -->
-    <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <svg class="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
-        </svg>
-    </div>
 </section>
-

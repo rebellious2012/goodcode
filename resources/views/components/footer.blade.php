@@ -4,7 +4,7 @@
             <!-- Company Info -->
             <div class="col-span-1 md:col-span-2">
                 <h3 class="text-2xl font-bold text-white mb-4">
-                    TechFlow<span class="text-bright-indigo">Solutions</span>
+                    CodElevator<span class="text-bright-indigo">Solutions</span>
                 </h3>
                 <p class="text-gray-400 mb-6 max-w-md">
                     Transforming businesses through innovative technology solutions. We deliver cutting-edge software development, cloud services, and digital transformation strategies.
@@ -44,16 +44,16 @@
             <div>
                 <h4 class="text-lg font-semibold text-white mb-4">Contact Info</h4>
                 <ul class="space-y-2 text-gray-400">
-                    <li>📧 hello@techflowsolutions.com</li>
-                    <li>📞 +1 (555) 123-4567</li>
-                    <li>📍 123 Tech Street, Silicon Valley, CA</li>
+                    <li>📧 support@codelevator.top</li>
+                    <li>📞 +48 883-219-797</li>
+                    <li>📍 Poland</li>
                 </ul>
             </div>
         </div>
         
         <div class="border-t border-slate-800 mt-8 pt-8 text-center">
             <p class="text-gray-400">
-                &copy; 2025 TechFlow Solutions. All rights reserved. | 
+                &copy; 2025 CodElevator Solutions. All rights reserved. | 
                 <a href="/privacy" class="hover:text-bright-cyan transition-colors">Privacy Policy</a> | 
                 <a href="/terms" class="hover:text-bright-cyan transition-colors">Terms of Service</a>
             </p>

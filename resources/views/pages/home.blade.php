@@ -8,6 +8,6 @@
     @include('components.why-us')
     @include('components.portfolio')
     @include('components.cta')
-    @include('components.contact-form')
+    
 @endsection
 
