@@ -38,11 +38,21 @@ if (!function_exists('localized_route')) {
      */
     function localized_route(string $name, array $parameters = []): string
     {
-        $currentLocale = Illuminate\Support\Facades\App::getLocale();
+        // First, try to get the locale from the current route's parameters.
+        $currentLocale = request()->route('locale');
+
+        // If the route parameter isn't present (e.g., for 'en' routes),
+        // fall back to the application's currently set locale.
+        if (!$currentLocale) {
+            $currentLocale = Illuminate\Support\Facades\App::getLocale();
+        }
+
         $defaultLocale = config('app.locale');
 
         if ($currentLocale === $defaultLocale) {
             // For the default locale, use the simple route name (e.g., 'about').
+            // Ensure 'locale' parameter is not passed to the route.
+            unset($parameters['locale']);
             return route($name, $parameters);
         } else {
             // For other locales, use the prefixed route name (e.g., 'locale.about').
