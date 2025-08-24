@@ -1,13 +1,13 @@
 <?php
 
 return [
-    'title' => 'About Us - TechFlow Solutions | Our Mission, Team & Values',
+    'title' => 'About Us - CodElevator | Our Mission, Team & Values',
     'hero_title' => 'About',
-    'hero_highlight' => 'TechFlow Solutions',
+    'hero_highlight' => 'CodElevator Solutions',
     'hero_subtitle' => 'We\'re a team of passionate technologists dedicated to transforming businesses through innovative software solutions and strategic digital transformation.',
 
     'mission_title' => 'Our Mission',
-    'mission_p1' => 'At TechFlow Solutions, we believe technology should empower businesses to achieve their full potential. Our mission is to bridge the gap between complex technical challenges and practical business solutions.',
+    'mission_p1' => 'At CodElevator Solutions, we believe technology should empower businesses to achieve their full potential. Our mission is to bridge the gap between complex technical challenges and practical business solutions.',
     'mission_p2' => 'We partner with companies across the United States and Europe to deliver cutting-edge software development, cloud infrastructure, and digital transformation services that drive measurable results and sustainable growth.',
     'mission_p3' => 'Since our founding in 2014, we\'ve helped over 500 businesses modernize their operations, streamline their processes, and unlock new opportunities through strategic technology implementation.',
 

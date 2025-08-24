@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', '404 - Page Not Found | TechFlow Solutions')
+@section('title', '404 - Page Not Found | CodElevator Solutions')
 
 @section('content')
 <section class="min-h-screen flex items-center justify-center bg-gradient-to-br from-deep-blue via-slate-900 to-slate-800">

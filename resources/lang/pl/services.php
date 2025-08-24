@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Our Services - TechFlow Solutions | Custom Software, Cloud, Mobile & Web Development',
+    'title' => 'Our Services - CodElevator Solutions | Custom Software, Cloud, Mobile & Web Development',
 
     // Hero Section
     'hero_title' => 'Our',

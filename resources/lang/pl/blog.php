@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Blog - TechFlow Solutions | Latest Tech Insights & Industry News',
+    'title' => 'Blog - CodElevator Solutions | Latest Tech Insights & Industry News',
 
     // Hero
     'hero_title' => 'Tech',

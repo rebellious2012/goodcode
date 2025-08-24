@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Portfolio - TechFlow Solutions | Our Success Stories & Case Studies',
+    'title' => 'Portfolio - CodElevator Solutions | Our Success Stories & Case Studies',
 
     // Page Hero
     'page_hero_title' => 'Our',

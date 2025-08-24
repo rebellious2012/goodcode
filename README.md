@@ -1,4 +1,4 @@
-# TechFlow Solutions - Corporate IT Company Website
+# CodElevator Solutions - Corporate IT Company Website
 
 Современный корпоративный сайт IT-компании, созданный с использованием Flask + TailwindCSS в стиле Laravel Blade компонентов.
 

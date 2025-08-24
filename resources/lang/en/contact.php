@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Contact Us - TechFlow Solutions | Get in Touch for Your Next Project',
+    'title' => 'Contact Us - CodElevator Solutions | Get in Touch for Your Next Project',
 
     // Hero
     'hero_title' => 'Get In',
@@ -20,8 +20,8 @@ return [
     'info_phone_hours' => 'Mon-Fri: 9AM-6PM PST',
 
     'info_email_title' => 'Email Us',
-    'info_email_address1' => 'hello@techflowsolutions.com',
-    'info_email_address2' => 'sales@techflowsolutions.com',
+    'info_email_address1' => 'hello@CodElevatorsolutions.com',
+    'info_email_address2' => 'sales@CodElevatorsolutions.com',
     'info_email_response' => '24-hour response time',
 
     // Map Section
