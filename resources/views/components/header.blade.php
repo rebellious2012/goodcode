@@ -2,7 +2,7 @@
     <nav class="container mx-auto px-4 py-4">
         <div class="flex justify-between items-center">
             <!-- Logo -->
-            <a href="{{ route('home', ['locale' => App::getLocale()]) }}" class="text-2xl font-bold text-white hover:text-bright-cyan transition-colors duration-300">
+            <a href="{{ localized_route('home') }}" class="text-2xl font-bold text-white hover:text-bright-cyan transition-colors duration-300">
                 Cod<span class="text-bright-indigo">Elevator</span>
             </a>
             

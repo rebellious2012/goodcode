@@ -30,3 +30,24 @@ if (!function_exists('getLocalizedURL')) {
         return route($currentRouteName, $params);
     }
 }
+
+if (!function_exists('localized_route')) {
+    /**
+     * Generates a URL for a given route name in the current locale.
+     * Ex: localized_route('about') will generate /about for 'en' and /pl/about for 'pl'.
+     */
+    function localized_route(string $name, array $parameters = []): string
+    {
+        $currentLocale = Illuminate\Support\Facades\App::getLocale();
+        $defaultLocale = config('app.locale');
+
+        if ($currentLocale === $defaultLocale) {
+            // For the default locale, use the simple route name (e.g., 'about').
+            return route($name, $parameters);
+        } else {
+            // For other locales, use the prefixed route name (e.g., 'locale.about').
+            $parameters['locale'] = $currentLocale;
+            return route('locale.' . $name, $parameters);
+        }
+    }
+}
