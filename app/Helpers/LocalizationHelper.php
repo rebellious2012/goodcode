@@ -1,26 +1,32 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\URL;
+use Illuminate\Support\Facades\Request;
 
 if (!function_exists('getLocalizedURL')) {
-    /**
-     * Generate a URL for the current route with a different locale.
-     *
-     * @param string $locale The new locale (e.g., 'en', 'pl').
-     * @return string The generated URL.
-     */
-    function getLocalizedURL(string $locale): string
+    function getLocalizedURL(string $targetLocale): string
     {
-        $currentRouteName = Route::currentRouteName();
-        $currentRouteParams = Route::current()->parameters();
+        $defaultLocale = config('app.locale');
+        $currentRouteName = Illuminate\Support\Facades\Route::currentRouteName();
+        $currentRouteParams = Illuminate\Support\Facades\Route::current()->parameters();
 
-        // If there's no current route name (e.g., on a 404 page), default to home.
-        if (!$currentRouteName) {
-            return route('home', ['locale' => $locale]);
+        // Если мы хотим переключиться на язык по умолчанию, префикс не нужен
+        if ($targetLocale === $defaultLocale) {
+            // Убираем 'locale.' из имени роута, если оно там есть
+            $routeName = str_replace('locale.', '', $currentRouteName);
+            // Убираем параметр 'locale' из параметров
+            unset($currentRouteParams['locale']);
+            return route($routeName, $currentRouteParams);
         }
 
-        $params = array_merge($currentRouteParams, ['locale' => $locale]);
+        // Если мы переключаемся на другой язык
+        // Убедимся, что имя роута содержит префикс 'locale.'
+        if (!str_starts_with($currentRouteName, 'locale.')) {
+            $currentRouteName = 'locale.' . $currentRouteName;
+        }
 
+        $params = array_merge($currentRouteParams, ['locale' => $targetLocale]);
         return route($currentRouteName, $params);
     }
 }

@@ -8,11 +8,15 @@ use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\ServicesController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return redirect('/en');
-});
+$defaultLocale = config('app.locale', 'en');
+$supportedLocales = config('app.supported_locales', ['en', 'pl']);
+$prefixedLocales = array_diff($supportedLocales, [$defaultLocale]);
 
-Route::group(['prefix' => '{locale}', 'where' => ['locale' => '[a-z]{2}']], function () {
+Route::group([
+    'prefix' => '{locale}',
+    'where' => ['locale' => implode('|', $prefixedLocales)], // where => ['locale' => 'pl|de|fr']
+    'as' => 'locale.' // Добавляет префикс к именам роутов, например 'locale.about'
+], function () {
     Route::get('/', HomeController::class)->name('home');
     Route::get('/about', AboutController::class)->name('about');
     Route::get('/services', ServicesController::class)->name('services');
@@ -20,3 +24,10 @@ Route::group(['prefix' => '{locale}', 'where' => ['locale' => '[a-z]{2}']], func
     Route::get('/blog', BlogController::class)->name('blog');
     Route::get('/contact', ContactController::class)->name('contact');
 });
+// Роуты для языка по умолчанию (без префикса)
+Route::get('/', HomeController::class)->name('home');
+Route::get('/about', AboutController::class)->name('about');
+Route::get('/services', ServicesController::class)->name('services');
+Route::get('/portfolio', PortfolioController::class)->name('portfolio');
+Route::get('/blog', BlogController::class)->name('blog');
+Route::get('/contact', ContactController::class)->name('contact');  
