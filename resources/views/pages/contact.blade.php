@@ -1,16 +1,16 @@
 @extends('layouts.app')
 
-@section('title', 'Contact Us - TechFlow Solutions | Get in Touch for Your Next Project')
+@section('title', __('contact.title'))
 
 @section('content')
 <!-- Hero Section -->
 <section class="relative py-20 bg-gradient-to-br from-deep-blue via-slate-900 to-slate-800">
     <div class="container mx-auto px-4 text-center">
         <h1 class="text-5xl md:text-6xl font-bold text-white mb-6">
-            Get In <span class="text-bright-indigo">Touch</span>
+            {{ __('contact.hero_title') }} <span class="text-bright-indigo">{{ __('contact.hero_highlight') }}</span>
         </h1>
         <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-            Ready to transform your business with cutting-edge technology? Let's discuss your project and explore how we can help you achieve your goals.
+            {{ __('contact.hero_subtitle') }}
         </p>
     </div>
 </section>
@@ -27,10 +27,10 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                     </svg>
                 </div>
-                <h3 class="text-xl font-bold text-white mb-4">Visit Our Office</h3>
-                <p class="text-gray-300 mb-2">123 Tech Street</p>
-                <p class="text-gray-300 mb-2">Silicon Valley, CA 94025</p>
-                <p class="text-gray-300">United States</p>
+                <h3 class="text-xl font-bold text-white mb-4">{{ __('contact.info_office_title') }}</h3>
+                <p class="text-gray-300 mb-2">{{ __('contact.info_office_line1') }}</p>
+                <p class="text-gray-300 mb-2">{{ __('contact.info_office_line2') }}</p>
+                <p class="text-gray-300">{{ __('contact.info_office_line3') }}</p>
             </div>
             
             <!-- Phone -->
@@ -40,10 +40,10 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
                     </svg>
                 </div>
-                <h3 class="text-xl font-bold text-white mb-4">Call Us</h3>
-                <p class="text-gray-300 mb-2">+1 (555) 123-4567</p>
-                <p class="text-gray-300 mb-2">+1 (555) 987-6543</p>
-                <p class="text-gray-300 text-sm">Mon-Fri: 9AM-6PM PST</p>
+                <h3 class="text-xl font-bold text-white mb-4">{{ __('contact.info_phone_title') }}</h3>
+                <p class="text-gray-300 mb-2">{{ __('contact.info_phone_number1') }}</p>
+                <p class="text-gray-300 mb-2">{{ __('contact.info_phone_number2') }}</p>
+                <p class="text-gray-300 text-sm">{{ __('contact.info_phone_hours') }}</p>
             </div>
             
             <!-- Email -->
@@ -53,10 +53,10 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                     </svg>
                 </div>
-                <h3 class="text-xl font-bold text-white mb-4">Email Us</h3>
-                <p class="text-gray-300 mb-2">hello@techflowsolutions.com</p>
-                <p class="text-gray-300 mb-2">sales@techflowsolutions.com</p>
-                <p class="text-gray-300 text-sm">24-hour response time</p>
+                <h3 class="text-xl font-bold text-white mb-4">{{ __('contact.info_email_title') }}</h3>
+                <p class="text-gray-300 mb-2">{{ __('contact.info_email_address1') }}</p>
+                <p class="text-gray-300 mb-2">{{ __('contact.info_email_address2') }}</p>
+                <p class="text-gray-300 text-sm">{{ __('contact.info_email_response') }}</p>
             </div>
         </div>
     </div>
@@ -70,10 +70,10 @@
     <div class="container mx-auto px-4">
         <div class="text-center mb-12">
             <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
-                Find Us on the <span class="text-bright-cyan">Map</span>
+                {{ __('contact.map_title') }} <span class="text-bright-cyan">{{ __('contact.map_highlight') }}</span>
             </h2>
             <p class="text-xl text-gray-300">
-                Located in the heart of Silicon Valley, we're easily accessible for in-person meetings and consultations.
+                {{ __('contact.map_subtitle') }}
             </p>
         </div>
         
@@ -85,8 +85,8 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                     </svg>
-                    <p class="text-lg">Interactive Map</p>
-                    <p class="text-sm">123 Tech Street, Silicon Valley, CA 94025</p>
+                    <p class="text-lg">{{ __('contact.map_placeholder') }}</p>
+                    <p class="text-sm">{{ __('contact.map_address') }}</p>
                 </div>
             </div>
         </div>
@@ -99,30 +99,30 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
             <!-- Office Hours -->
             <div>
-                <h3 class="text-3xl font-bold text-white mb-8">Office Hours</h3>
+                <h3 class="text-3xl font-bold text-white mb-8">{{ __('contact.hours_title') }}</h3>
                 <div class="space-y-4">
                     <div class="flex justify-between items-center py-3 border-b border-slate-700">
-                        <span class="text-gray-300">Monday - Friday</span>
-                        <span class="text-bright-cyan font-semibold">9:00 AM - 6:00 PM</span>
+                        <span class="text-gray-300">{{ __('contact.hours_monday_friday') }}</span>
+                        <span class="text-bright-cyan font-semibold">{{ __('contact.hours_monday_friday_time') }}</span>
                     </div>
                     <div class="flex justify-between items-center py-3 border-b border-slate-700">
-                        <span class="text-gray-300">Saturday</span>
-                        <span class="text-bright-cyan font-semibold">10:00 AM - 4:00 PM</span>
+                        <span class="text-gray-300">{{ __('contact.hours_saturday') }}</span>
+                        <span class="text-bright-cyan font-semibold">{{ __('contact.hours_saturday_time') }}</span>
                     </div>
                     <div class="flex justify-between items-center py-3 border-b border-slate-700">
-                        <span class="text-gray-300">Sunday</span>
-                        <span class="text-gray-400">Closed</span>
+                        <span class="text-gray-300">{{ __('contact.hours_sunday') }}</span>
+                        <span class="text-gray-400">{{ __('contact.hours_sunday_time') }}</span>
                     </div>
                     <div class="flex justify-between items-center py-3">
-                        <span class="text-gray-300">Emergency Support</span>
-                        <span class="text-bright-indigo font-semibold">24/7 Available</span>
+                        <span class="text-gray-300">{{ __('contact.hours_emergency') }}</span>
+                        <span class="text-bright-indigo font-semibold">{{ __('contact.hours_emergency_time') }}</span>
                     </div>
                 </div>
             </div>
             
             <!-- Additional Information -->
             <div>
-                <h3 class="text-3xl font-bold text-white mb-8">Why Choose Us?</h3>
+                <h3 class="text-3xl font-bold text-white mb-8">{{ __('contact.why_title') }}</h3>
                 <div class="space-y-6">
                     <div class="flex items-start space-x-4">
                         <div class="w-8 h-8 bg-bright-indigo rounded-full flex items-center justify-center flex-shrink-0 mt-1">
@@ -131,8 +131,8 @@
                             </svg>
                         </div>
                         <div>
-                            <h4 class="text-white font-semibold mb-2">Free Initial Consultation</h4>
-                            <p class="text-gray-300">Get expert advice and project assessment at no cost.</p>
+                            <h4 class="text-white font-semibold mb-2">{{ __('contact.why1_title') }}</h4>
+                            <p class="text-gray-300">{{ __('contact.why1_desc') }}</p>
                         </div>
                     </div>
                     
@@ -143,8 +143,8 @@
                             </svg>
                         </div>
                         <div>
-                            <h4 class="text-white font-semibold mb-2">Rapid Response Time</h4>
-                            <p class="text-gray-300">We respond to all inquiries within 24 hours.</p>
+                            <h4 class="text-white font-semibold mb-2">{{ __('contact.why2_title') }}</h4>
+                            <p class="text-gray-300">{{ __('contact.why2_desc') }}</p>
                         </div>
                     </div>
                     
@@ -155,8 +155,8 @@
                             </svg>
                         </div>
                         <div>
-                            <h4 class="text-white font-semibold mb-2">Transparent Pricing</h4>
-                            <p class="text-gray-300">No hidden fees, clear project estimates upfront.</p>
+                            <h4 class="text-white font-semibold mb-2">{{ __('contact.why3_title') }}</h4>
+                            <p class="text-gray-300">{{ __('contact.why3_desc') }}</p>
                         </div>
                     </div>
                     
@@ -167,8 +167,8 @@
                             </svg>
                         </div>
                         <div>
-                            <h4 class="text-white font-semibold mb-2">Ongoing Support</h4>
-                            <p class="text-gray-300">Comprehensive support and maintenance services.</p>
+                            <h4 class="text-white font-semibold mb-2">{{ __('contact.why4_title') }}</h4>
+                            <p class="text-gray-300">{{ __('contact.why4_desc') }}</p>
                         </div>
                     </div>
                 </div>
@@ -181,10 +181,10 @@
 <section class="py-20 bg-slate-800/30">
     <div class="container mx-auto px-4 text-center">
         <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
-            Follow Us on <span class="text-bright-indigo">Social Media</span>
+            {{ __('contact.social_title') }} <span class="text-bright-indigo">{{ __('contact.social_highlight') }}</span>
         </h2>
         <p class="text-xl text-gray-300 mb-12 max-w-2xl mx-auto">
-            Stay connected and get the latest updates on our projects, insights, and company news.
+            {{ __('contact.social_subtitle') }}
         </p>
         
         <div class="flex justify-center space-x-6">

@@ -7,7 +7,7 @@
                     CodElevator<span class="text-bright-indigo">Solutions</span>
                 </h3>
                 <p class="text-gray-400 mb-6 max-w-md">
-                    Transforming businesses through innovative technology solutions. We deliver cutting-edge software development, cloud services, and digital transformation strategies.
+                    {{ __('app.footer_slogan') }}
                 </p>
                 <div class="flex space-x-4">
                     <a href="#" class="text-gray-400 hover:text-bright-cyan transition-colors duration-300">
@@ -30,32 +30,32 @@
             
             <!-- Quick Links -->
             <div>
-                <h4 class="text-lg font-semibold text-white mb-4">Quick Links</h4>
+                <h4 class="text-lg font-semibold text-white mb-4">{{ __('app.footer_quick_links') }}</h4>
                 <ul class="space-y-2">
-                    <li><a href="/about" class="text-gray-400 hover:text-bright-cyan transition-colors duration-300">About Us</a></li>
-                    <li><a href="/services" class="text-gray-400 hover:text-bright-cyan transition-colors duration-300">Services</a></li>
-                    <li><a href="/portfolio" class="text-gray-400 hover:text-bright-cyan transition-colors duration-300">Portfolio</a></li>
-                    <li><a href="/blog" class="text-gray-400 hover:text-bright-cyan transition-colors duration-300">Blog</a></li>
-                    <li><a href="/contact" class="text-gray-400 hover:text-bright-cyan transition-colors duration-300">Contact</a></li>
+                    <li><a href="/about" class="text-gray-400 hover:text-bright-cyan transition-colors duration-300">{{ __('app.header_about') }}</a></li>
+                    <li><a href="/services" class="text-gray-400 hover:text-bright-cyan transition-colors duration-300">{{ __('app.header_services') }}</a></li>
+                    <li><a href="/portfolio" class="text-gray-400 hover:text-bright-cyan transition-colors duration-300">{{ __('app.header_portfolio') }}</a></li>
+                    <li><a href="/blog" class="text-gray-400 hover:text-bright-cyan transition-colors duration-300">{{ __('app.header_blog') }}</a></li>
+                    <li><a href="/contact" class="text-gray-400 hover:text-bright-cyan transition-colors duration-300">{{ __('app.header_contact') }}</a></li>
                 </ul>
             </div>
             
             <!-- Contact Info -->
             <div>
-                <h4 class="text-lg font-semibold text-white mb-4">Contact Info</h4>
+                <h4 class="text-lg font-semibold text-white mb-4">{{ __('app.footer_contact_info') }}</h4>
                 <ul class="space-y-2 text-gray-400">
-                    <li>📧 support@codelevator.top</li>
-                    <li>📞 +48 883-219-797</li>
-                    <li>📍 Poland</li>
+                    <li>📧 {{ __('app.footer_contact_email') }}</li>
+                    <li>📞 {{ __('app.footer_contact_phone') }}</li>
+                    <li>📍 {{ __('app.footer_contact_location') }}</li>
                 </ul>
             </div>
         </div>
         
         <div class="border-t border-slate-800 mt-8 pt-8 text-center">
             <p class="text-gray-400">
-                &copy; 2025 CodElevator Solutions. All rights reserved. | 
-                <a href="/privacy" class="hover:text-bright-cyan transition-colors">Privacy Policy</a> | 
-                <a href="/terms" class="hover:text-bright-cyan transition-colors">Terms of Service</a>
+                {!! __('app.footer_copyright') !!} |
+                <a href="/privacy" class="hover:text-bright-cyan transition-colors">{{ __('app.footer_privacy') }}</a> |
+                <a href="/terms" class="hover:text-bright-cyan transition-colors">{{ __('app.footer_terms') }}</a>
             </p>
         </div>
     </div>

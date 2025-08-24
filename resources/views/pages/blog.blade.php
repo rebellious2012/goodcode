@@ -1,16 +1,16 @@
 @extends('layouts.app')
 
-@section('title', 'Blog - TechFlow Solutions | Latest Tech Insights & Industry News')
+@section('title', __('blog.title'))
 
 @section('content')
 <!-- Hero Section -->
 <section class="relative py-20 bg-gradient-to-br from-deep-blue via-slate-900 to-slate-800">
     <div class="container mx-auto px-4 text-center">
         <h1 class="text-5xl md:text-6xl font-bold text-white mb-6">
-            Tech <span class="text-bright-indigo">Insights</span>
+            {{ __('blog.hero_title') }} <span class="text-bright-indigo">{{ __('blog.hero_highlight') }}</span>
         </h1>
         <p class="text-xl text-gray-300 max-w-3xl mx-auto">
-            Stay ahead of the curve with our latest insights on technology trends, best practices, and industry innovations.
+            {{ __('blog.hero_subtitle') }}
         </p>
     </div>
 </section>
@@ -25,7 +25,7 @@
                         <svg class="w-20 h-20 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
                         </svg>
-                        <div class="text-sm opacity-80">Featured Article</div>
+                        <div class="text-sm opacity-80">{{ __('blog.featured_article') }}</div>
                     </div>
                 </div>
                 <div class="p-8">
@@ -50,7 +50,7 @@
                             </div>
                         </div>
                         <a href="/blog/ai-enterprise-software" class="text-bright-cyan hover:text-bright-indigo transition-colors font-semibold">
-                            Read More →
+                            {{ __('blog.read_more') }} →
                         </a>
                     </div>
                 </div>
@@ -93,7 +93,7 @@
                             <span class="text-gray-400 text-sm">David Wilson</span>
                         </div>
                         <a href="/blog/multi-cloud-strategy" class="text-bright-cyan hover:text-bright-indigo transition-colors font-semibold">
-                            Read More →
+                            {{ __('blog.read_more') }} →
                         </a>
                     </div>
                 </div>
@@ -128,7 +128,7 @@
                             <span class="text-gray-400 text-sm">John Smith</span>
                         </div>
                         <a href="/blog/react-native-vs-flutter" class="text-bright-cyan hover:text-bright-indigo transition-colors font-semibold">
-                            Read More →
+                            {{ __('blog.read_more') }} →
                         </a>
                     </div>
                 </div>
@@ -163,7 +163,7 @@
                             <span class="text-gray-400 text-sm">Maria Johnson</span>
                         </div>
                         <a href="/blog/zero-trust-architecture" class="text-bright-cyan hover:text-bright-indigo transition-colors font-semibold">
-                            Read More →
+                            {{ __('blog.read_more') }} →
                         </a>
                     </div>
                 </div>
@@ -198,7 +198,7 @@
                             <span class="text-gray-400 text-sm">David Wilson</span>
                         </div>
                         <a href="/blog/kubernetes-production-practices" class="text-bright-cyan hover:text-bright-indigo transition-colors font-semibold">
-                            Read More →
+                            {{ __('blog.read_more') }} →
                         </a>
                     </div>
                 </div>
@@ -233,7 +233,7 @@
                             <span class="text-gray-400 text-sm">John Smith</span>
                         </div>
                         <a href="/blog/frontend-architecture-patterns" class="text-bright-cyan hover:text-bright-indigo transition-colors font-semibold">
-                            Read More →
+                            {{ __('blog.read_more') }} →
                         </a>
                     </div>
                 </div>
@@ -268,7 +268,7 @@
                             <span class="text-gray-400 text-sm">Maria Johnson</span>
                         </div>
                         <a href="/blog/database-optimization" class="text-bright-cyan hover:text-bright-indigo transition-colors font-semibold">
-                            Read More →
+                            {{ __('blog.read_more') }} →
                         </a>
                     </div>
                 </div>
@@ -279,7 +279,7 @@
         <!-- Load More Button -->
         <div class="text-center mt-12">
             <button class="bg-gradient-to-r from-bright-indigo to-bright-cyan text-white px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">
-                Load More Articles
+                {{ __('blog.load_more') }}
             </button>
         </div>
     </div>
@@ -289,22 +289,22 @@
 <section class="py-20 bg-gradient-to-r from-slate-900 to-deep-blue">
     <div class="container mx-auto px-4 text-center">
         <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
-            Stay Updated with <span class="text-bright-cyan">Tech Insights</span>
+            {{ __('blog.newsletter_title') }} <span class="text-bright-cyan">{{ __('blog.newsletter_highlight') }}</span>
         </h2>
         <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
-            Subscribe to our newsletter and get the latest technology insights, best practices, and industry trends delivered to your inbox.
+            {{ __('blog.newsletter_subtitle') }}
         </p>
         
         <div class="max-w-md mx-auto">
             <div class="flex gap-4">
-                <input type="email" placeholder="Enter your email address" 
+                <input type="email" placeholder="{{ __('blog.newsletter_placeholder') }}"
                        class="flex-1 px-4 py-3 bg-slate-800 border border-slate-600 rounded-lg text-white placeholder-gray-400 focus:border-bright-cyan focus:ring-1 focus:ring-bright-cyan transition-colors">
                 <button class="bg-gradient-to-r from-bright-indigo to-bright-cyan text-white px-6 py-3 rounded-lg font-semibold hover:shadow-lg transition-all duration-300">
-                    Subscribe
+                    {{ __('blog.newsletter_button') }}
                 </button>
             </div>
             <p class="text-gray-400 text-sm mt-3">
-                No spam, unsubscribe at any time. We respect your privacy.
+                {{ __('blog.newsletter_privacy') }}
             </p>
         </div>
     </div>
