@@ -5,28 +5,41 @@ use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\Request;
 
 if (!function_exists('getLocalizedURL')) {
+    /**
+     * Generates a language-switched URL using direct path manipulation to avoid router issues.
+     */
     function getLocalizedURL(string $targetLocale): string
     {
-        $defaultLocale = config('app.locale');
-        $currentRouteName = Illuminate\Support\Facades\Route::currentRouteName();
-        $currentRouteParams = Illuminate\Support\Facades\Route::current()->parameters();
+        $currentPath = request()->path();
+        $currentLocale = request()->segment(1);
+        $supportedLocales = config('app.supported_locales', ['en', 'pl']);
+        $defaultLocale = config('app.locale', 'en');
 
-        // When switching to the default locale, we need a URL without a prefix.
+        // Check if the first segment is a supported locale
+        $isLocaleInPath = in_array($currentLocale, $supportedLocales);
+
+        // If switching to the default locale, remove the prefix
         if ($targetLocale === $defaultLocale) {
-            $routeName = str_replace('locale.', '', $currentRouteName);
-            unset($currentRouteParams['locale']);
-            // Generate a relative path first (3rd parameter `false`) and then convert to a clean absolute URL.
-            // This prevents the router from accidentally adding the '/en/' prefix based on context.
-            return url(route($routeName, $currentRouteParams, false));
+            if ($isLocaleInPath) {
+                // Path is /pl/about, remove /pl
+                $pathWithoutLocale = substr($currentPath, strlen($currentLocale));
+                return url(trim($pathWithoutLocale, '/'));
+            }
+            // Already on default, link to the same path
+            return url($currentPath);
         }
 
-        // When switching to a non-default locale, we need the 'locale.' prefixed route.
-        if (!str_starts_with($currentRouteName, 'locale.')) {
-            $currentRouteName = 'locale.' . $currentRouteName;
+        // If switching to a non-default locale
+        if ($isLocaleInPath) {
+            // Path is /pl/about, switch to /de/about (hypothetically)
+            $pathWithoutLocale = substr($currentPath, strlen($currentLocale));
+            return url($targetLocale . trim($pathWithoutLocale, '/'));
+        } else {
+            // Path is /about, switch to /pl/about
+            // Handle the root URL case ('/') correctly
+            $pathToPrefix = ($currentPath === '/') ? '' : $currentPath;
+            return url($targetLocale . '/' . $pathToPrefix);
         }
-
-        $params = array_merge($currentRouteParams, ['locale' => $targetLocale]);
-        return route($currentRouteName, $params);
     }
 }
 
