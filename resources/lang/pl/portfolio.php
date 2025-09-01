@@ -1,62 +1,62 @@
 <?php
 
 return [
-    'title' => 'Portfolio - CodElevator Solutions | Our Success Stories & Case Studies',
+    'title' => 'Portfolio - CodElevator Solutions | Nasze Sukcesy i Studia Przypadków',
 
     // Page Hero
-    'page_hero_title' => 'Our',
+    'page_hero_title' => 'Nasze',
     'page_hero_highlight' => 'Portfolio',
-    'page_hero_subtitle' => "Explore our successful projects and discover how we've helped businesses across various industries achieve their digital transformation goals.",
+    'page_hero_subtitle' => 'Poznaj nasze zrealizowane projekty i zobacz, jak pomogliśmy firmom z różnych branż osiągnąć cele transformacji cyfrowej.',
 
     // Filter
-    'filter_all' => 'All Projects',
-    'filter_web' => 'Web Development',
-    'filter_mobile' => 'Mobile Apps',
-    'filter_cloud' => 'Cloud Solutions',
-    'filter_enterprise' => 'Enterprise Software',
+    'filter_all' => 'Wszystkie Projekty',
+    'filter_web' => 'Aplikacje Webowe',
+    'filter_mobile' => 'Aplikacje Mobilne',
+    'filter_cloud' => 'Rozwiązania Chmurowe',
+    'filter_enterprise' => 'Oprogramowanie dla Firm',
 
     // Project Details
-    'view_details' => 'View Details',
+    'view_details' => 'Zobacz Szczegóły',
 
     // Projects
-    'project1_type' => 'E-commerce Platform',
-    'project1_title' => 'Global Fashion Marketplace',
-    'project1_desc' => 'Built a scalable e-commerce platform handling 100K+ daily transactions with advanced inventory management and AI-powered recommendations.',
-    'project1_category' => 'Fashion & Retail',
+    'project1_type' => 'Platforma E-commerce',
+    'project1_title' => 'Globalny Marketplace Modowy',
+    'project1_desc' => 'Stworzyliśmy skalowalną platformę e-commerce obsługującą 100K+ transakcji dziennie z zaawansowanym zarządzaniem stanami magazynowymi i rekomendacjami AI.',
+    'project1_category' => 'Moda i Handel Detaliczny',
 
-    'project2_type' => 'FinTech Application',
-    'project2_title' => 'Digital Banking Solution',
-    'project2_desc' => 'Developed a secure mobile banking app with biometric authentication, real-time transactions, and comprehensive financial analytics.',
-    'project2_category' => 'Financial Services',
+    'project2_type' => 'Aplikacja FinTech',
+    'project2_title' => 'Cyfrowe Rozwiązanie Bankowe',
+    'project2_desc' => 'Opracowaliśmy bezpieczną aplikację bankową z biometrycznym logowaniem, transakcjami w czasie rzeczywistym i zaawansowaną analityką finansową.',
+    'project2_category' => 'Usługi Finansowe',
 
-    'project3_type' => 'Healthcare Platform',
-    'project3_title' => 'Telemedicine Platform',
-    'project3_desc' => 'Created a comprehensive telemedicine solution connecting patients with healthcare providers through secure video consultations.',
-    'project3_category' => 'Healthcare',
+    'project3_type' => 'Platforma Medyczna',
+    'project3_title' => 'Platforma Telemedycyny',
+    'project3_desc' => 'Stworzyliśmy kompleksowe rozwiązanie telemedyczne łączące pacjentów z lekarzami poprzez bezpieczne wideokonsultacje.',
+    'project3_category' => 'Opieka Zdrowotna',
 
-    'project4_type' => 'Cloud Migration',
-    'project4_title' => 'Enterprise Cloud Migration',
-    'project4_desc' => "Migrated a Fortune 500 company's entire infrastructure to AWS, reducing costs by 40% and improving performance by 60%.",
-    'project4_category' => 'Manufacturing',
+    'project4_type' => 'Migracja do Chmury',
+    'project4_title' => 'Migracja Infrastruktury Enterprise do Chmury',
+    'project4_desc' => 'Przenieśliśmy całą infrastrukturę firmy z listy Fortune 500 do AWS, redukując koszty o 40% i zwiększając wydajność o 60%.',
+    'project4_category' => 'Przemysł i Produkcja',
 
-    'project5_type' => 'Food Delivery App',
-    'project5_title' => 'FoodFlow Delivery Platform',
-    'project5_desc' => 'Built a comprehensive food delivery ecosystem with customer, restaurant, and driver apps, serving 50+ cities.',
-    'project5_category' => 'Food & Beverage',
+    'project5_type' => 'Aplikacja do Dostaw Jedzenia',
+    'project5_title' => 'Platforma FoodFlow Delivery',
+    'project5_desc' => 'Zbudowaliśmy kompleksowy ekosystem dostaw jedzenia z aplikacjami dla klientów, restauracji i kierowców – obsługujący 50+ miast.',
+    'project5_category' => 'Gastronomia',
 
-    'project6_type' => 'Enterprise ERP',
-    'project6_title' => 'Manufacturing ERP System',
-    'project6_desc' => 'Developed a comprehensive ERP solution for a manufacturing company, integrating inventory, production, and financial management.',
-    'project6_category' => 'Manufacturing',
+    'project6_type' => 'ERP dla Firm',
+    'project6_title' => 'System ERP dla Produkcji',
+    'project6_desc' => 'Stworzyliśmy kompleksowy system ERP dla firmy produkcyjnej, integrujący zarządzanie magazynem, produkcją i finansami.',
+    'project6_category' => 'Przemysł i Produkcja',
 
     // Success Metrics Section
-    'metrics_title' => 'Our Success in Numbers',
+    'metrics_title' => 'Nasze Sukcesy w Liczbach',
     'metrics_stat1_number' => '500+',
-    'metrics_stat1_label' => 'Projects Completed',
+    'metrics_stat1_label' => 'Zrealizowanych Projektów',
     'metrics_stat2_number' => '98%',
-    'metrics_stat2_label' => 'Client Satisfaction',
+    'metrics_stat2_label' => 'Poziom Satysfakcji Klientów',
     'metrics_stat3_number' => '15+',
-    'metrics_stat3_label' => 'Industries Served',
+    'metrics_stat3_label' => 'Obsługiwanych Branż',
     'metrics_stat4_number' => '24/7',
-    'metrics_stat4_label' => 'Support Available',
+    'metrics_stat4_label' => 'Dostępne Wsparcie',
 ];
