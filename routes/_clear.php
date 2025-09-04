@@ -17,3 +17,8 @@ Route::get('/migrate', function () {
 //     Artisan::call('migrate:fresh');
 //     return response()->json('Migrated');
 // });
+// storage:link
+Route::get('/storage-link', function () {
+    Artisan::call('storage:link');
+    return response()->json('Storage Linked');
+});
