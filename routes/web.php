@@ -21,5 +21,13 @@ Route::group([
     Route::get('/contact', ContactController::class)->name('contact');
 });
 
+Route::middleware(['web'])->prefix('admin')->name('admin.')->group(function () {
+    Route::middleware(['auth'])->group(function () {
+        Route::get('/dashboard', function () {
+            return view('admin.dashboard');
+        })->name('dashboard');
+    });
+});
+
 require __DIR__.'/_clear.php';
 require __DIR__.'/_setlocale.php';
