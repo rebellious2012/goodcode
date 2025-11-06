@@ -21,11 +21,33 @@ Route::group([
     Route::get('/contact', ContactController::class)->name('contact');
 });
 
+use Laravel\Fortify\Http\Controllers\AuthenticatedSessionController;
+
+use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\Admin\PortfolioItemController;
+use App\Http\Controllers\Admin\BlogPostController;
+
 Route::middleware(['web'])->prefix('admin')->name('admin.')->group(function () {
+    Route::middleware(['guest'])->group(function () {
+        Route::get('/login', function () {
+            return view('admin.auth.login');
+        })->name('login');
+    });
+
     Route::middleware(['auth'])->group(function () {
         Route::get('/dashboard', function () {
             return view('admin.dashboard');
         })->name('dashboard');
+
+        Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
+
+        Route::resource('users', UserController::class)->except(['show']);
+        Route::resource('portfolio', PortfolioItemController::class)->except(['show'])->parameters([
+            'portfolio' => 'portfolioItem'
+        ]);
+        Route::resource('blog', BlogPostController::class)->except(['show'])->parameters([
+            'blog' => 'blogPost'
+        ]);
     });
 });
 
