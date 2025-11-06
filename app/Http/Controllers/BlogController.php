@@ -10,8 +10,11 @@ class BlogController extends Controller
     /**
      * Handle the incoming request.
      */
+use App\Models\BlogPost;
+
     public function __invoke(Request $request): View
     {
-        return view('pages.blog');
+        $blogPosts = BlogPost::latest()->get();
+        return view('pages.blog', compact('blogPosts'));
     }
 }
