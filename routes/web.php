@@ -26,6 +26,7 @@ use Laravel\Fortify\Http\Controllers\AuthenticatedSessionController;
 use App\Http\Controllers\Admin\UserController;
 use App\Http\Controllers\Admin\PortfolioItemController;
 use App\Http\Controllers\Admin\BlogPostController;
+use App\Http\Controllers\Admin\DashboardController;
 
 Route::middleware(['web'])->prefix('admin')->name('admin.')->group(function () {
     Route::middleware(['guest'])->group(function () {
@@ -35,9 +36,7 @@ Route::middleware(['web'])->prefix('admin')->name('admin.')->group(function () {
     });
 
     Route::middleware(['auth'])->group(function () {
-        Route::get('/dashboard', function () {
-            return view('admin.dashboard');
-        })->name('dashboard');
+        Route::get('/dashboard', DashboardController::class)->name('dashboard');
 
         Route::post('/logout', [AuthenticatedSessionController::class, 'destroy'])->name('logout');
 
