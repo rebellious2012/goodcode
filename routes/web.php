@@ -4,6 +4,7 @@ use App\Http\Controllers\AboutController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\InterviewController;
 use App\Http\Controllers\PortfolioController;
 use App\Http\Controllers\ServicesController;
 use Illuminate\Support\Facades\Route;
@@ -19,6 +20,7 @@ Route::group([
     Route::get('/portfolio', PortfolioController::class)->name('portfolio');
     Route::get('/blog', BlogController::class)->name('blog');
     Route::get('/contact', ContactController::class)->name('contact');
+    Route::get('/interview-questions', [InterviewController::class, 'index'])->name('interview-questions');
 });
 
 use Laravel\Fortify\Http\Controllers\AuthenticatedSessionController;
