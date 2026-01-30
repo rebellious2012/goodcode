@@ -1,10 +1,10 @@
 @php
-    $currentLocale = app()->getLocale(); // en или pl
-    $alternateLocale = $currentLocale === 'pl' ? 'en' : 'pl';
+    $currentLocale = app()->getLocale(); // en, pl или ru
+    //$alternateLocale = $currentLocale === 'pl' ? 'en' : 'pl';
 
     // Чистим путь от префикса языка
-    $path = request()->path(); // ru/page или page
-    $pathWithoutLocale = preg_replace('#^(pl|en)(/)?#', '', $path);
+    $path = request()->path(); // pl/page или en/page или ru/page или page
+    $pathWithoutLocale = preg_replace('#^(pl|en|ru)(/)?#', '', $path);
     $pathClean = trim($pathWithoutLocale, '/');
 
     $baseUrl = rtrim(config('app.url'), '/');
@@ -12,6 +12,7 @@
     // Ссылки
     $urlEn = $baseUrl . ($pathClean ? '/' . $pathClean : '');
     $urlPl = $baseUrl . '/pl' . ($pathClean ? '/' . $pathClean : '');
+    $urlRu = $baseUrl . '/ru' . ($pathClean ? '/' . $pathClean : '');
 @endphp
 <header x-data="{ open: false }" class="bg-slate-900/95 backdrop-blur-sm border-b border-slate-800 sticky top-0 z-50">
     <nav class="container mx-auto px-4 py-4">
@@ -33,10 +34,11 @@
                 <div class="flex items-center space-x-2 bg-slate-800 rounded-lg p-2">
     @php
         $currentLocale = app()->getLocale();
-        $flags = ['en' => '🇺🇸', 'pl' => '🇵🇱'];
+        $flags = ['en' => '🇺🇸', 'pl' => '🇵🇱', 'ru' => '🇷🇺'];
         $urls = [
             'en' => $baseUrl . ($pathClean ? '/' . $pathClean : ''),
             'pl' => $baseUrl . '/pl' . ($pathClean ? '/' . $pathClean : ''),
+            'ru' => $baseUrl . '/ru' . ($pathClean ? '/' . $pathClean : ''),
         ];
     @endphp
     @foreach(config('app.supported_locales') as $locale)

@@ -6,7 +6,7 @@ return [
         [
             'question' => 'What is the Pipe operator (`|>`) introduced in PHP 8.5, and how does it improve code readability?',
             'answer' => 'The Pipe operator allows passing the result of one expression as the first argument to the next function call. It helps avoid deeply nested function calls and makes the data flow more linear and readable. For example: `$result = "hello" |> \'strtoupper\' |> \'trim\';`'
-        },
+        ],
         [
             'question' => 'Explain Property Hooks introduced in PHP 8.4. How do they differ from traditional getters and setters?',
             'answer' => 'Property Hooks allow defining logic directly on class properties using `get` and `set` hooks. This reduces boilerplate code by eliminating the need for explicit getter and setter methods while still allowing validation or transformation of property values.'

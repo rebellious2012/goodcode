@@ -48,8 +48,8 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
                     </svg>
                 </div>
-                <h3 class="text-2xl font-bold text-white mb-4">{{ __('home.service_mobile_title') }}</h3>
-                <p class="text-gray-300 mb-6">{{ __('home.service_mobile_desc') }}</p>
+                <h3 class="text-2xl font-bold text-white mb-4">{{ __('home.service_3') }}</h3>
+                <p class="text-gray-300 mb-6">{{ __('home.service_3_desc') }}</p>
                 <a href="/services/mobile-development" class="text-bright-cyan hover:text-bright-indigo transition-colors font-semibold">
                     {{ __('home.learn_more') }} →
                 </a>

@@ -25,8 +25,8 @@ return [
 'service_ready_desc' => 'Gotowe systemy i platformy SaaS, które pozwalają na szybkie wdrożenie i optymalizację kosztów.',
 
 
-    'service_mobile_title' => 'Aplikacje Mobilne',
-    'service_mobile_desc' => 'Nowoczesne aplikacje iOS i Android, które zapewniają świetne doświadczenia użytkownika i realne zyski.',
+    'service_3' => 'Pozycjonowanie SEO',
+    'service_3_desc' => 'Optymalizacja dla wyszukiwarek internetowych: zwiększanie ruchu organicznego, poprawa pozycji w wynikach i wzrost konwersji.',
 
     'service_design_title' => 'Projektowanie UI/UX',
     'service_design_desc' => 'Nowoczesny, intuicyjny design, który zwiększa konwersję i lojalność klientów.',

@@ -24,9 +24,8 @@ return [
     'service_ready_title' => 'Ready-Made Solutions',
 'service_ready_desc' => 'Pre-built systems and SaaS platforms designed for fast deployment and cost efficiency.',
 
-
-    'service_mobile_title' => 'Mobile App Development',
-    'service_mobile_desc' => 'Intuitive, high-performing apps for iOS and Android to engage your users and boost revenue.',
+    'service_3' => 'SEO Promotion',
+    'service_3_desc' => 'Search engine optimization to increase organic traffic, improve rankings, and grow conversions.',
 
     'service_design_title' => 'UI/UX Design',
     'service_design_desc' => 'Modern, user-centric design that converts visitors into loyal customers.',
