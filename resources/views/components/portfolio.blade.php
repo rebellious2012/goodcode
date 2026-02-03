@@ -32,9 +32,6 @@
                         <span class="px-3 py-1 bg-bright-cyan/20 text-bright-cyan rounded-full text-sm">Node.js</span>
                         <span class="px-3 py-1 bg-bright-indigo/20 text-bright-indigo rounded-full text-sm">AWS</span>
                     </div>
-                    <a href="/portfolio/fashion-marketplace" class="text-bright-cyan hover:text-bright-indigo transition-colors font-semibold">
-                        View Case Study →
-                    </a>
                 </div>
             </div>
             
@@ -58,9 +55,6 @@
                         <span class="px-3 py-1 bg-bright-indigo/20 text-bright-indigo rounded-full text-sm">Python</span>
                         <span class="px-3 py-1 bg-bright-cyan/20 text-bright-cyan rounded-full text-sm">Blockchain</span>
                     </div>
-                    <a href="/portfolio/digital-banking" class="text-bright-cyan hover:text-bright-indigo transition-colors font-semibold">
-                        View Case Study →
-                    </a>
                 </div>
             </div>
             
@@ -84,22 +78,10 @@
                         <span class="px-3 py-1 bg-bright-cyan/20 text-bright-cyan rounded-full text-sm">Laravel</span>
                         <span class="px-3 py-1 bg-bright-indigo/20 text-bright-indigo rounded-full text-sm">WebRTC</span>
                     </div>
-                    <a href="/portfolio/telemedicine" class="text-bright-cyan hover:text-bright-indigo transition-colors font-semibold">
-                        View Case Study →
-                    </a>
                 </div>
             </div>
         </div>
         
-        <!-- View all projects button -->
-        <div class="text-center mt-12">
-            <a href="/portfolio" class="inline-flex items-center bg-gradient-to-r from-bright-indigo to-bright-cyan text-white px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-lg hover:shadow-bright-indigo/25 transition-all duration-300 transform hover:-translate-y-1">
-                View All Projects
-                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
-                </svg>
-            </a>
-        </div>
     </div>
 </section>
 

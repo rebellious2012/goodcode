@@ -17,6 +17,9 @@ Route::group([
     Route::get('/', HomeController::class)->name('home');
     Route::get('/about', AboutController::class)->name('about');
     Route::get('/services', ServicesController::class)->name('services');
+    Route::get('/solutions/real-estate', function () {
+        return view('pages.solutions.real-estate');
+    })->name('solutions.real-estate');
     Route::get('/portfolio', PortfolioController::class)->name('portfolio');
     Route::get('/blog', BlogController::class)->name('blog');
     Route::get('/contact', ContactController::class)->name('contact');
