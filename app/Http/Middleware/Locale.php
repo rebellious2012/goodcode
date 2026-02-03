@@ -11,7 +11,7 @@ use Symfony\Component\HttpFoundation\Response;
 class Locale
 {
     public const MAIN_LANGUAGE = 'en';
-    public const SUPPORTED_LANGUAGES = ['en', 'pl'];
+    public const SUPPORTED_LANGUAGES = ['en', 'pl', 'ru', 'uk'];
 
     public static function mainLanguage()
     {

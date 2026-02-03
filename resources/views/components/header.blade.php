@@ -2,17 +2,6 @@
     $currentLocale = app()->getLocale(); // en, pl или ru
     //$alternateLocale = $currentLocale === 'pl' ? 'en' : 'pl';
 
-    // Чистим путь от префикса языка
-    $path = request()->path(); // pl/page или en/page или ru/page или page
-    $pathWithoutLocale = preg_replace('#^(pl|en|ru)(/)?#', '', $path);
-    $pathClean = trim($pathWithoutLocale, '/');
-
-    $baseUrl = rtrim(config('app.url'), '/');
-
-    // Ссылки
-    $urlEn = $baseUrl . ($pathClean ? '/' . $pathClean : '');
-    $urlPl = $baseUrl . '/pl' . ($pathClean ? '/' . $pathClean : '');
-    $urlRu = $baseUrl . '/ru' . ($pathClean ? '/' . $pathClean : '');
 @endphp
 <header x-data="{ open: false }" class="bg-slate-900/95 backdrop-blur-sm border-b border-slate-800 sticky top-0 z-50">
     <nav class="container mx-auto px-4 py-4">
@@ -29,36 +18,6 @@
             
             <!-- Right side controls -->
             <div class="flex items-center space-x-3">
-                <!-- Language Switcher -->
-               
-                <div class="flex items-center space-x-2 bg-slate-800 rounded-lg p-2">
-    @php
-        $currentLocale = app()->getLocale();
-        $flags = ['en' => '🇺🇸', 'pl' => '🇵🇱', 'ru' => '🇷🇺'];
-        $urls = [
-            'en' => $baseUrl . ($pathClean ? '/' . $pathClean : ''),
-            'pl' => $baseUrl . '/pl' . ($pathClean ? '/' . $pathClean : ''),
-            'ru' => $baseUrl . '/ru' . ($pathClean ? '/' . $pathClean : ''),
-        ];
-    @endphp
-    @foreach(config('app.supported_locales') as $locale)
-        @if($locale === $currentLocale)
-            <span class="flex items-center space-x-1 px-2 py-1 rounded bg-slate-700 cursor-default">
-                <span class="text-lg">{{ $flags[$locale] ?? '🌐' }}</span>
-                <span class="text-sm font-medium text-white">{{ strtoupper($locale) }}</span>
-            </span>
-        @else
-            <a href="{{ $urls[$locale] ?? '#' }}"
-               aria-label="Switch to {{ strtoupper($locale) }}"
-               class="flex items-center space-x-1 px-2 py-1 rounded hover:bg-slate-700 transition-colors">
-                <span class="text-lg">{{ $flags[$locale] ?? '🌐' }}</span>
-                <span class="text-sm font-medium text-white">{{ strtoupper($locale) }}</span>
-            </a>
-        @endif
-    @endforeach
-</div>
-
-                
                 <!-- Mobile Menu Button -->
                 <button @click="open = !open" class="md:hidden text-white hover:text-bright-cyan transition-colors">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
