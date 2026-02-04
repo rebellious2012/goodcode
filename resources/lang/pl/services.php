@@ -1,14 +1,10 @@
 <?php
 
 return [
-    'title' => 'Nasze Usługi - CodElevator Solutions | Oprogramowanie na zamówienie, Aplikacje Mobilne, Rozwiązania Chmurowe',
-
-    // Hero Section
+    'title' => 'Nasze Usługi - CodElevator Solutions | Oprogramowanie na zamówienie, Chmura, Aplikacje Mobilne i Webowe',
     'hero_title' => 'Nasze',
     'hero_highlight' => 'Usługi',
     'hero_subtitle' => 'Kompleksowe rozwiązania technologiczne zaprojektowane, aby przyspieszyć rozwój Twojego biznesu i proces transformacji cyfrowej.',
-
-    // Detailed Services Section
     'detailed_software_title' => 'Tworzenie Oprogramowania na Zamówienie',
     'detailed_software_desc' => 'Przekształcamy Twoje unikalne wymagania biznesowe w wydajne rozwiązania programistyczne. Nasz zespół ekspertów tworzy dedykowane aplikacje dopasowane do Twoich procesów i celów biznesowych.',
     'detailed_software_feature1' => 'Aplikacje klasy enterprise',
@@ -25,7 +21,6 @@ return [
     'tech_database_list' => 'PostgreSQL, MongoDB, Redis',
     'tech_cloud' => 'Chmura',
     'tech_cloud_list' => 'AWS, Azure, Google Cloud',
-
     'detailed_cloud_title' => 'Rozwiązania Chmurowe',
     'detailed_cloud_desc' => 'Przenieś swoją infrastrukturę do chmury z pełnym bezpieczeństwem i odkryj pełen potencjał nowoczesnej technologii. Pomagamy w wyborze najlepszej platformy i strategii.',
     'detailed_cloud_feature1' => 'Strategia i realizacja migracji do chmury',
@@ -43,7 +38,6 @@ return [
     'cloud_benefit3_number' => '3x',
     'cloud_benefit3_title' => 'Szybsze Wdrożenie',
     'cloud_benefit3_desc' => 'Przyspieszenie time-to-market',
-
     'detailed_mobile_title' => 'Tworzenie Aplikacji Mobilnych',
     'detailed_mobile_desc' => 'Budujemy angażujące aplikacje mobilne, które zachwycają użytkowników i wspierają rozwój biznesu. Tworzymy aplikacje natywne i cross-platformowe działające bezbłędnie na wszystkich urządzeniach.',
     'build_your_app_button' => 'Stwórz Swoją Aplikację',
@@ -64,8 +58,6 @@ return [
     'app_dev_step3_desc' => 'Agile development z regularnymi aktualizacjami',
     'app_dev_step4_title' => 'Testy i Wdrożenie',
     'app_dev_step4_desc' => 'Testowanie jakości i publikacja w App Store / Google Play',
-
-    // Process Section
     'process_title' => 'Nasz Proces',
     'process_highlight' => 'Realizacji',
     'process_subtitle' => 'Stosujemy sprawdzoną metodologię, która gwarantuje skuteczne i terminowe dostarczenie projektu.',

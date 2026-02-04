@@ -2,54 +2,39 @@
 
 return [
     'title' => 'Portfolio - CodElevator Solutions | Nasze Sukcesy i Studia Przypadków',
-
-    // Page Hero
     'page_hero_title' => 'Nasze',
     'page_hero_highlight' => 'Portfolio',
     'page_hero_subtitle' => 'Poznaj nasze zrealizowane projekty i zobacz, jak pomogliśmy firmom z różnych branż osiągnąć cele transformacji cyfrowej.',
-
-    // Filter
     'filter_all' => 'Wszystkie Projekty',
     'filter_web' => 'Aplikacje Webowe',
     'filter_mobile' => 'Aplikacje Mobilne',
     'filter_cloud' => 'Rozwiązania Chmurowe',
     'filter_enterprise' => 'Oprogramowanie dla Firm',
-
-    // Project Details
     'view_details' => 'Zobacz Szczegóły',
-
-    // Projects
     'project1_type' => 'Platforma E-commerce',
     'project1_title' => 'Globalny Marketplace Modowy',
     'project1_desc' => 'Stworzyliśmy skalowalną platformę e-commerce obsługującą 100K+ transakcji dziennie z zaawansowanym zarządzaniem stanami magazynowymi i rekomendacjami AI.',
     'project1_category' => 'Moda i Handel Detaliczny',
-
     'project2_type' => 'Aplikacja FinTech',
     'project2_title' => 'Cyfrowe Rozwiązanie Bankowe',
     'project2_desc' => 'Opracowaliśmy bezpieczną aplikację bankową z biometrycznym logowaniem, transakcjami w czasie rzeczywistym i zaawansowaną analityką finansową.',
     'project2_category' => 'Usługi Finansowe',
-
     'project3_type' => 'Platforma Medyczna',
     'project3_title' => 'Platforma Telemedycyny',
     'project3_desc' => 'Stworzyliśmy kompleksowe rozwiązanie telemedyczne łączące pacjentów z lekarzami poprzez bezpieczne wideokonsultacje.',
     'project3_category' => 'Opieka Zdrowotna',
-
     'project4_type' => 'Migracja do Chmury',
     'project4_title' => 'Migracja Infrastruktury Enterprise do Chmury',
     'project4_desc' => 'Przenieśliśmy całą infrastrukturę firmy z listy Fortune 500 do AWS, redukując koszty o 40% i zwiększając wydajność o 60%.',
     'project4_category' => 'Przemysł i Produkcja',
-
     'project5_type' => 'Aplikacja do Dostaw Jedzenia',
     'project5_title' => 'Platforma FoodFlow Delivery',
     'project5_desc' => 'Zbudowaliśmy kompleksowy ekosystem dostaw jedzenia z aplikacjami dla klientów, restauracji i kierowców – obsługujący 50+ miast.',
     'project5_category' => 'Gastronomia',
-
     'project6_type' => 'ERP dla Firm',
     'project6_title' => 'System ERP dla Produkcji',
     'project6_desc' => 'Stworzyliśmy kompleksowy system ERP dla firmy produkcyjnej, integrujący zarządzanie magazynem, produkcją i finansami.',
     'project6_category' => 'Przemysł i Produkcja',
-
-    // Success Metrics Section
     'metrics_title' => 'Nasze Sukcesy w Liczbach',
     'metrics_stat1_number' => '500+',
     'metrics_stat1_label' => 'Zrealizowanych Projektów',
