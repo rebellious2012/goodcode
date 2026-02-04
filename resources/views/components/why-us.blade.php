@@ -1,6 +1,5 @@
 <section class="py-20 bg-gradient-to-r from-slate-900 to-deep-blue">
     <div class="container mx-auto px-4">
-        <!-- Section header -->
         <div class="text-center mb-16">
             <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">
                 {{ __('home.why_title') }}
@@ -11,20 +10,17 @@
             </p>
         </div>
         
-        <!-- Features grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <!-- Proven Delivery -->
             <div class="text-center group">
                 <div class="w-20 h-20 bg-gradient-to-r from-bright-indigo to-bright-cyan rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                     <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0012 18.75c-1.03 0-1.9-.4-2.593-.896l-.547-.548z"></path>
                     </svg>
                 </div>
                 <h3 class="text-xl font-bold text-white mb-4">{{ __('home.why_feat1_title') }}</h3>
                 <p class="text-gray-300">{{ __('home.why_feat1_desc') }}</p>
             </div>
             
-            <!-- Agile that fits business -->
             <div class="text-center group">
                 <div class="w-20 h-20 bg-gradient-to-r from-bright-cyan to-bright-indigo rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                     <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -35,22 +31,20 @@
                 <p class="text-gray-300">{{ __('home.why_feat2_desc') }}</p>
             </div>
             
-            <!-- Support / SLA -->
             <div class="text-center group">
                 <div class="w-20 h-20 bg-gradient-to-r from-bright-indigo to-bright-cyan rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                     <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M12 2.25a9.75 9.75 0 100 19.5 9.75 9.75 0 000-19.5z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
                     </svg>
                 </div>
                 <h3 class="text-xl font-bold text-white mb-4">{{ __('home.why_feat3_title') }}</h3>
                 <p class="text-gray-300">{{ __('home.why_feat3_desc') }}</p>
             </div>
             
-            <!-- Built to scale -->
             <div class="text-center group">
                 <div class="w-20 h-20 bg-gradient-to-r from-bright-cyan to-bright-indigo rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
                     <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
                     </svg>
                 </div>
                 <h3 class="text-xl font-bold text-white mb-4">{{ __('home.why_feat4_title') }}</h3>
@@ -58,23 +52,15 @@
             </div>
         </div>
         
-        <!-- Stats section -->
-        <div class="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-            <div>
-                <div class="text-4xl md:text-5xl font-bold text-bright-cyan mb-2">{{ __('home.stat_projects_number') }}</div>
-                <div class="text-gray-300">{{ __('home.stat_projects_label') }}</div>
-            </div>
-            <div>
-                <div class="text-4xl md:text-5xl font-bold text-bright-indigo mb-2">{{ __('home.stat_satisfaction_number') }}</div>
-                <div class="text-gray-300">{{ __('home.stat_satisfaction_label') }}</div>
-            </div>
-            <div>
-                <div class="text-4xl md:text-5xl font-bold text-bright-cyan mb-2">{{ __('home.stat_countries_number') }}</div>
-                <div class="text-gray-300">{{ __('home.stat_countries_label') }}</div>
-            </div>
-            <div>
-                <div class="text-4xl md:text-5xl font-bold text-bright-indigo mb-2">{{ __('home.stat_experience_number') }}</div>
-                <div class="text-gray-300">{{ __('home.stat_experience_label') }}</div>
+        <div class="mt-24">
+            <p class="text-center text-gray-400 uppercase tracking-widest text-sm mb-10">Наш технологический стек</p>
+            <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
+                <img src="/img/logos/laravel.svg" alt="Laravel" class="h-10 md:h-12 pointer-events-none">
+                <img src="/img/logos/vuejs.svg" alt="Vue.js" class="h-10 md:h-12 pointer-events-none">
+                <img src="/img/logos/php.svg" alt="PHP" class="h-10 md:h-12 pointer-events-none">
+                <img src="/img/logos/postgresql.svg" alt="PostgreSQL" class="h-10 md:h-12 pointer-events-none">
+                <img src="/img/logos/redis.svg" alt="Redis" class="h-10 md:h-12 pointer-events-none">
+                <img src="/img/logos/tailwind.svg" alt="Tailwind CSS" class="h-10 md:h-12 pointer-events-none">
             </div>
         </div>
     </div>

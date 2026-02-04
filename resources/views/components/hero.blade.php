@@ -32,22 +32,6 @@
                     {{ __('home.cta_secondary') }}
                 </a>
             </div>
-
-            <!-- Trust indicators -->
-            <div class="flex flex-wrap justify-center items-center gap-8 text-gray-400">
-                <div class="flex items-center space-x-2">
-                    <span class="text-bright-cyan text-2xl font-bold">{{ __('home.stat_projects') }}</span>
-                    <span>{{ __('home.stat_projects_text') }}</span>
-                </div>
-                <div class="flex items-center space-x-2">
-                    <span class="text-bright-cyan text-2xl font-bold">{{ __('home.stat_satisfaction') }}</span>
-                    <span>{{ __('home.stat_satisfaction_text') }}</span>
-                </div>
-                <div class="flex items-center space-x-2">
-                    <span class="text-bright-cyan text-2xl font-bold">{{ __('home.stat_support') }}</span>
-                    <span>{{ __('home.stat_support_text') }}</span>
-                </div>
-            </div>
         </div>
     </div>
 </section>

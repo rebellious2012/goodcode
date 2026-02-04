@@ -16,48 +16,50 @@
 </section>
 
 <!-- Featured Article -->
-@if($blogPosts->isNotEmpty())
+
 <section class="py-20 bg-slate-800/30">
     <div class="container mx-auto px-4">
         <div class="bg-slate-900/80 backdrop-blur-sm border border-slate-700 rounded-xl overflow-hidden">
             <div class="grid grid-cols-1 lg:grid-cols-2">
                 <div class="h-64 lg:h-auto bg-gradient-to-br from-bright-indigo to-bright-cyan flex items-center justify-center">
-                    @if($blogPosts->first()->image)
-                        <img src="{{ asset('storage/' . $blogPosts->first()->image) }}" alt="{{ $blogPosts->first()->title }}" class="w-full h-full object-cover">
-                    @else
+                  
+                        <img src="{{ asset('storage/') }}" alt="" class="w-full h-full object-cover">
+                   
                     <div class="text-white text-center">
                         <svg class="w-20 h-20 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
                         </svg>
                         <div class="text-sm opacity-80">{{ __('blog.featured_article') }}</div>
                     </div>
-                    @endif
+                  
                 </div>
                 <div class="p-8">
                     <div class="flex items-center space-x-4 mb-4">
-                         @if($blogPosts->first()->tags)
-                            @foreach($blogPosts->first()->tags as $tag)
+                         @php
+                            $tags = ['Tech', 'Laravel', 'Web Development'];
+                         @endphp
+                            @foreach($tags as $tag)
                                 <span class="px-3 py-1 bg-bright-indigo/20 text-bright-indigo rounded-full text-sm">{{ $tag }}</span>
                             @endforeach
-                        @endif
-                        <span class="text-gray-400 text-sm">{{ $blogPosts->first()->created_at->format('M d, Y') }}</span>
+                     
+                        <span class="text-gray-400 text-sm">{{ date('M d, Y') }}</span>
                     </div>
                     <h2 class="text-3xl font-bold text-white mb-4">
-                        {{ $blogPosts->first()->title }}
+                        @lang('interview.title')
                     </h2>
                     <p class="text-gray-300 mb-6">
-                        {{ $blogPosts->first()->preview }}
+                       @lang('interview.title')
                     </p>
                     <div class="flex items-center justify-between">
                         <div class="flex items-center space-x-3">
                             <div class="w-10 h-10 bg-gradient-to-r from-bright-cyan to-bright-indigo rounded-full flex items-center justify-center">
-                                <span class="text-white font-semibold text-sm">{{ substr($blogPosts->first()->author, 0, 2) }}</span>
+                                <span class="text-white font-semibold text-sm">author</span>
                             </div>
                             <div>
-                                <div class="text-white font-semibold">{{ $blogPosts->first()->author }}</div>
+                                <div class="text-white font-semibold">author </div>
                             </div>
                         </div>
-                        <a href="#" class="text-bright-cyan hover:text-bright-indigo transition-colors font-semibold">
+                        <a href="{{ route('interview-questions')}}" class="text-bright-cyan hover:text-bright-indigo transition-colors font-semibold">
                             {{ __('blog.read_more') }} →
                         </a>
                     </div>
@@ -66,7 +68,7 @@
         </div>
     </div>
 </section>
-@endif
+
 
 <!-- Blog Articles Grid -->
 <section class="py-20 bg-slate-900/30">
