@@ -1,66 +1,35 @@
 <?php
 
 return [
-    'title_part1' => 'Transform Your Business with',
-    'title_highlight' => 'Cutting-Edge Technology',
-    'subtitle' => 'We deliver innovative software solutions, cloud infrastructure, and digital transformation strategies that drive growth and competitive advantage for forward-thinking companies.',
+    'title_part1' => 'We turn your ideas into scalable ',
+    'title_highlight' => 'digital products',
+    'subtitle' => 'Forget the limitations of website builders and ready-made CMS. We design custom systems, fully tailored to your needs and ready for any load.',
     'cta_primary' => 'Get Started',
     'cta_secondary' => 'Learn More',
-
-    // Trust indicators
-    'stat_projects' => '500+',
-    'stat_projects_text' => 'Projects Delivered',
-    'stat_satisfaction' => '98%',
-    'stat_satisfaction_text' => 'Client Satisfaction',
-    'stat_support' => '24/7',
-    'stat_support_text' => 'Support Available',
     'services_title' => 'Our',
     'services_highlight' => 'Services',
-    'services_subtitle' => 'We deliver cutting-edge tech solutions to help businesses scale, innovate, and thrive in the digital era.',
-
+    'services_subtitle' => 'We provide cutting-edge technology solutions that help businesses scale, innovate, and thrive in the digital age.',
     'service_software_title' => 'Custom Software Development',
-    'service_software_desc' => 'Tailored software built for your workflows, ensuring scalability, security, and business growth.',
-
-    'service_ready_title' => 'Ready-Made Solutions',
-'service_ready_desc' => 'Pre-built systems and SaaS platforms designed for fast deployment and cost efficiency.',
-
-    'service_3' => 'SEO Promotion',
-    'service_3_desc' => 'Search engine optimization to increase organic traffic, improve rankings, and grow conversions.',
-
-    'service_design_title' => 'UI/UX Design',
-    'service_design_desc' => 'Modern, user-centric design that converts visitors into loyal customers.',
-
-    'service_consulting_title' => 'IT Consulting',
-    'service_consulting_desc' => 'Expert guidance to optimize your IT infrastructure and drive digital transformation.',
-
-    'service_security_title' => 'Cybersecurity Solutions',
-    'service_security_desc' => 'Robust security strategies to protect your business from cyber threats and data breaches.',
-
+    'service_software_desc' => 'We create custom systems (CRM, ERP, client portals) using Laravel and VueJS. We design architecture ready for high loads and scalability.',
+    'service_ready_title' => 'Ready-made solutions',
+    'service_ready_desc' => 'Ready-made systems and SaaS platforms designed for rapid deployment and cost savings.',
+    'service_3' => 'Integrated Digital Promotion (SEO + SMM)',
+    'service_3_desc' => 'We increase your online presence. We combine technical SEO for organic search growth and professional social media management to build a loyal community around your brand.',
+    'service_design_title' => 'UI/UX Design and Prototyping',
+    'service_design_desc' => 'We design interfaces that not only look good but also convert visitors into customers. We create a smooth user journey for complex systems.',
+    'service_consulting_title' => 'IT Consulting and Technical Audit',
+    'service_consulting_desc' => 'We help optimize current processes, conduct code security audits, and help choose the right technological path for your project.',
+    'service_security_title' => 'Integrations and API Solutions',
+    'service_security_desc' => 'We connect your business with the outside world. Setting up payment gateways, integration with CRM, warehouse programs, and creating custom API interfaces for mobile applications.',
     'learn_more' => 'Learn More',
-    // WHY CHOOSE
-'why_title' => 'Why Choose',
-'why_subtitle' => 'Senior engineering, predictable delivery, and a business-first mindset — so you ship faster, scale safely, and see ROI in weeks, not quarters.',
-
-'why_feat1_title' => 'Proven Delivery',
-'why_feat1_desc'  => '10+ years, 100+ launches, and zero-drama releases across regulated and high-traffic environments.',
-
-'why_feat2_title' => 'Agile That Fits Your Business',
-'why_feat2_desc'  => 'Short sprints, weekly demos, transparent scope — timelines and budgets you can actually forecast.',
-
-'why_feat3_title' => 'Support with SLAs',
-'why_feat3_desc'  => 'Operational support with clear SLAs, on-call options, and proactive monitoring to keep you online.',
-
-'why_feat4_title' => 'Built to Scale',
-'why_feat4_desc'  => 'Cloud-ready, modular architectures that grow from MVP to millions — without rewrites.',
-
-// STATS
-'stat_projects_number'     => '500+',
-'stat_projects_label'      => 'Projects Completed',
-'stat_satisfaction_number' => '98%',
-'stat_satisfaction_label'  => 'Client Satisfaction',
-'stat_countries_number'    => '8+',
-'stat_countries_label'     => 'Countries Served',
-'stat_experience_number'   => '10+',
-'stat_experience_label'    => 'Years Experience',
-
+    'why_title' => 'Why Choose Us',
+    'why_subtitle' => 'We don\'t just "write code" based on a technical specification. We dive deep into your business logic, suggest optimal implementation paths, and use our ready-made components so you see the first results as soon as possible. With CodElevator, you get a solid foundation that grows with your business.',
+    'why_feat1_title' => 'Expert Consulting',
+    'why_feat1_desc' => 'We will tell you how to implement your idea better and cheaper. Drawing on our experience in developing complex systems since 2014, we help avoid architectural mistakes at the planning stage.',
+    'why_feat2_title' => 'Fast Launch (MVP)',
+    'why_feat2_desc' => 'Forget months of waiting. Thanks to our massive library of Ready-made solutions, we\'ll assemble a working prototype of your product in just a few days, so you can start testing and selling.',
+    'why_feat3_title' => 'Lifetime Support',
+    'why_feat3_desc' => 'We don\'t disappear after the project is delivered. CodElevator provides long-term maintenance, monitors security, and promptly implements new features when your business needs expansion.',
+    'why_feat4_title' => 'Built to Scale Architecture',
+    'why_feat4_desc' => 'We build systems on Laravel and VueJS that don\'t need to be rewritten as load increases. Your product is inherently ready for millions of users and complex financial operations.',
 ];
