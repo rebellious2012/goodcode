@@ -1,25 +1,17 @@
 <?php
 
 return [
-    'title' => 'Blog - CodElevator Solutions | Latest Tech Insights & Industry News',
-
-    // Hero
-    'hero_title' => 'Tech',
-    'hero_highlight' => 'Insights',
-    'hero_subtitle' => 'Stay ahead of the curve with our latest insights on technology trends, best practices, and industry innovations.',
-
-    // Featured Article
-    'featured_article' => 'Featured Article',
-    'read_more' => 'Read More',
-
-    // Articles Grid
-    'load_more' => 'Load More Articles',
-
-    // Newsletter
-    'newsletter_title' => 'Stay Updated with',
-    'newsletter_highlight' => 'Tech Insights',
-    'newsletter_subtitle' => 'Subscribe to our newsletter and get the latest technology insights, best practices, and industry trends delivered to your inbox.',
-    'newsletter_placeholder' => 'Enter your email address',
-    'newsletter_button' => 'Subscribe',
-    'newsletter_privacy' => 'No spam, unsubscribe at any time. We respect your privacy.',
+    'title' => 'Blog - CodElevator Solutions | Najnowsze spostrzeżenia technologiczne i wiadomości branżowe',
+    'hero_title' => 'Spostrzeżenia',
+    'hero_highlight' => 'Technologiczne',
+    'hero_subtitle' => 'Bądź na bieżąco dzięki naszym najnowszym spostrzeżeniom na temat trendów technologicznych, dobrych praktyk i innowacji branżowych.',
+    'featured_article' => 'Polecany Artykuł',
+    'read_more' => 'Czytaj więcej',
+    'load_more' => 'Wczytaj więcej artykułów',
+    'newsletter_title' => 'Bądź na bieżąco z',
+    'newsletter_highlight' => 'Technologią',
+    'newsletter_subtitle' => 'Zapisz się do naszego newslettera i otrzymuj najnowsze spostrzeżenia technologiczne oraz trendy branżowe prosto do swojej skrzynki.',
+    'newsletter_placeholder' => 'Wpisz swój adres e-mail',
+    'newsletter_button' => 'Subskrybuj',
+    'newsletter_privacy' => 'Brak spamu, wypisz się w dowolnym momencie. Szanujemy Twoją prywatność.',
 ];
