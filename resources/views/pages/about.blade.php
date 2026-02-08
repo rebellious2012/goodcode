@@ -79,10 +79,10 @@
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- CEO -->
             <div class="bg-slate-900/80 backdrop-blur-sm border border-slate-700 rounded-xl p-8 text-center hover:border-bright-indigo transition-all duration-300">
-                <div class="w-24 h-24 bg-gradient-to-r from-bright-indigo to-bright-cyan rounded-full mx-auto mb-6 flex items-center justify-center">
-                    <span class="text-2xl font-bold text-white">JS</span>
+                <div class="w-24 h-24 rounded-full mx-auto mb-6 overflow-hidden ring-4 ring-bright-indigo/30">
+                    <img src="{{ asset('img/Roman.jpg') }}" alt="Roman Samoilenko" class="w-full h-full object-cover">
                 </div>
-                <h3 class="text-xl font-bold text-white mb-2">John Smith</h3>
+                <h3 class="text-xl font-bold text-white mb-2">Samoilenko Roman</h3>
                 <p class="text-bright-cyan mb-4">{{ __('about.ceo_role') }}</p>
                 <p class="text-gray-300">
                     {{ __('about.ceo_bio') }}
@@ -91,10 +91,10 @@
             
             <!-- CTO -->
             <div class="bg-slate-900/80 backdrop-blur-sm border border-slate-700 rounded-xl p-8 text-center hover:border-bright-cyan transition-all duration-300">
-                <div class="w-24 h-24 bg-gradient-to-r from-bright-cyan to-bright-indigo rounded-full mx-auto mb-6 flex items-center justify-center">
-                    <span class="text-2xl font-bold text-white">MJ</span>
+                <div class="w-24 h-24 rounded-full mx-auto mb-6 overflow-hidden ring-4 ring-bright-cyan/30">
+                    <img src="{{ asset('img/софия.png') }}" alt="Sophia" class="w-full h-full object-cover">
                 </div>
-                <h3 class="text-xl font-bold text-white mb-2">Maria Johnson</h3>
+                <h3 class="text-xl font-bold text-white mb-2">Sophia</h3>
                 <p class="text-bright-cyan mb-4">{{ __('about.cto_role') }}</p>
                 <p class="text-gray-300">
                     {{ __('about.cto_bio') }}
@@ -103,10 +103,10 @@
             
             <!-- VP of Engineering -->
             <div class="bg-slate-900/80 backdrop-blur-sm border border-slate-700 rounded-xl p-8 text-center hover:border-bright-indigo transition-all duration-300">
-                <div class="w-24 h-24 bg-gradient-to-r from-bright-indigo to-bright-cyan rounded-full mx-auto mb-6 flex items-center justify-center">
+                <div class="w-24 h-24 bg-gradient-to-r from-bright-indigo to-bright-cyan rounded-full mx-auto mb-6 flex items-center justify-center ring-4 ring-bright-indigo/30">
                     <span class="text-2xl font-bold text-white">DW</span>
                 </div>
-                <h3 class="text-xl font-bold text-white mb-2">David Wilson</h3>
+                <h3 class="text-xl font-bold text-white mb-2">Dmitro Kucenko</h3>
                 <p class="text-bright-cyan mb-4">{{ __('about.vp_role') }}</p>
                 <p class="text-gray-300">
                     {{ __('about.vp_bio') }}

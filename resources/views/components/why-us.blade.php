@@ -53,14 +53,14 @@
         </div>
         
         <div class="mt-24">
-            <p class="text-center text-gray-400 uppercase tracking-widest text-sm mb-10">Наш технологический стек</p>
+            <p class="text-center text-gray-400 uppercase tracking-widest text-sm mb-10">{{ __('home.tech_stack_title') }}</p>
             <div class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500">
-                <img src="/img/logos/laravel.svg" alt="Laravel" class="h-10 md:h-12 pointer-events-none">
-                <img src="/img/logos/vuejs.svg" alt="Vue.js" class="h-10 md:h-12 pointer-events-none">
-                <img src="/img/logos/php.svg" alt="PHP" class="h-10 md:h-12 pointer-events-none">
-                <img src="/img/logos/postgresql.svg" alt="PostgreSQL" class="h-10 md:h-12 pointer-events-none">
-                <img src="/img/logos/redis.svg" alt="Redis" class="h-10 md:h-12 pointer-events-none">
-                <img src="/img/logos/tailwind.svg" alt="Tailwind CSS" class="h-10 md:h-12 pointer-events-none">
+                <img src="/img/logos/laravel.svg" alt="Laravel" class="h-10 md:h-16 pointer-events-none">
+                <img src="/img/logos/vuejs.svg" alt="Vue.js" class="h-10 md:h-16 pointer-events-none">
+                <img src="/img/logos/php.svg" alt="PHP" class="h-10 md:h-16 pointer-events-none">
+                <img src="/img/logos/postgresql.svg" alt="PostgreSQL" class="h-10 md:h-16 pointer-events-none">
+                <img src="/img/logos/redis.svg" alt="Redis" class="h-10 md:h-16 pointer-events-none">
+                <img src="/img/logos/tailwind.svg" alt="Tailwind CSS" class="h-10 md:h-16 pointer-events-none">
             </div>
         </div>
     </div>

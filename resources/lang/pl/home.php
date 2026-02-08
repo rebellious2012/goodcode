@@ -32,4 +32,5 @@ return [
     'why_feat3_desc' => 'Nie znikamy po oddaniu projektu. CodElevator zapewnia długoterminowe wsparcie, dba o bezpieczeństwo i sprawnie wdraża nowe funkcje, gdy Twój biznes wymaga rozbudowy.',
     'why_feat4_title' => 'Architektura gotowa na wzrost',
     'why_feat4_desc' => 'Budujemy systemy na Laravel i VueJS, których nie trzeba przepisywać wraz ze wzrostem obciążenia. Twój produkt jest od początku gotowy na miliony użytkowników i złożone operacje finansowe.',
+    'tech_stack_title' => 'Nasz stos technologiczny',
 ];

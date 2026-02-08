@@ -32,4 +32,5 @@ return [
     'why_feat3_desc' => 'We don\'t disappear after the project is delivered. CodElevator provides long-term maintenance, monitors security, and promptly implements new features when your business needs expansion.',
     'why_feat4_title' => 'Built to Scale Architecture',
     'why_feat4_desc' => 'We build systems on Laravel and VueJS that don\'t need to be rewritten as load increases. Your product is inherently ready for millions of users and complex financial operations.',
+    'tech_stack_title' => 'Our Tech Stack',
 ];
