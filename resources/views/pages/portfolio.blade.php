@@ -58,7 +58,8 @@
                 <div class="h-48 bg-gradient-to-br from-bright-indigo to-bright-cyan flex items-center justify-center">
                     @if($item->image)
                         <img src="{{ asset('storage/' . $item->image) }}" alt="{{ $item->title }}" class="w-full h-full object-cover">
-                    @else
+                   <div class="text-sm opacity-80">{{ $item->type }}</div>
+                        @else
                     <div class="text-white text-center">
                         <svg class="w-16 h-16 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>

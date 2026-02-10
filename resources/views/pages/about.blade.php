@@ -82,7 +82,7 @@
                 <div class="w-24 h-24 rounded-full mx-auto mb-6 overflow-hidden ring-4 ring-bright-indigo/30">
                     <img src="{{ asset('img/Roman.jpg') }}" alt="Roman Samoilenko" class="w-full h-full object-cover">
                 </div>
-                <h3 class="text-xl font-bold text-white mb-2">Samoilenko Roman</h3>
+                <h3 class="text-xl font-bold text-white mb-2">Roman</h3>
                 <p class="text-bright-cyan mb-4">{{ __('about.ceo_role') }}</p>
                 <p class="text-gray-300">
                     {{ __('about.ceo_bio') }}
@@ -104,9 +104,9 @@
             <!-- VP of Engineering -->
             <div class="bg-slate-900/80 backdrop-blur-sm border border-slate-700 rounded-xl p-8 text-center hover:border-bright-indigo transition-all duration-300">
                 <div class="w-24 h-24 bg-gradient-to-r from-bright-indigo to-bright-cyan rounded-full mx-auto mb-6 flex items-center justify-center ring-4 ring-bright-indigo/30">
-                    <span class="text-2xl font-bold text-white">DW</span>
+                    <span class="text-2xl font-bold text-white">DK</span>
                 </div>
-                <h3 class="text-xl font-bold text-white mb-2">Dmitro Kucenko</h3>
+                <h3 class="text-xl font-bold text-white mb-2">Dmytro Kutsenko</h3>
                 <p class="text-bright-cyan mb-4">{{ __('about.vp_role') }}</p>
                 <p class="text-gray-300">
                     {{ __('about.vp_bio') }}
