@@ -1,52 +1,33 @@
 <?php
 
 return [
-    'title' => 'About Us - CodElevator | Our Mission, Team & Values',
+    'title' => 'About Us - CodElevator Solutions | Our Mission, Team and Values',
     'hero_title' => 'About',
     'hero_highlight' => 'CodElevator Solutions',
-    'hero_subtitle' => 'We\'re a team of passionate technologists dedicated to transforming businesses through innovative software solutions and strategic digital transformation.',
-
-    'mission_title' => 'Our Mission',
-    'mission_p1' => 'At CodElevator Solutions, we believe technology should empower businesses to achieve their full potential. Our mission is to bridge the gap between complex technical challenges and practical business solutions.',
-    'mission_p2' => 'We partner with companies across the United States and Europe to deliver cutting-edge software development, cloud infrastructure, and digital transformation services that drive measurable results and sustainable growth.',
-    'mission_p3' => 'Since our founding in 2014, we\'ve helped over 500 businesses modernize their operations, streamline their processes, and unlock new opportunities through strategic technology implementation.',
-
-    'impact_title' => 'Our Impact',
-    'impact_stat1_number' => '500+',
-    'impact_stat1_text' => 'Successful Projects Delivered',
-    'impact_stat2_number' => '98%',
-    'impact_stat2_text' => 'Client Satisfaction Rate',
-    'impact_stat3_number' => '50+',
-    'impact_stat3_text' => 'Expert Team Members',
-    'impact_stat4_number' => '10+',
-    'impact_stat4_text' => 'Years of Excellence',
-
-    'team_title' => 'Meet Our',
-    'team_highlight' => 'Leadership Team',
-    'team_subtitle' => 'Our experienced leadership team brings together decades of expertise in technology, business strategy, and innovation.',
-
-    'ceo_role' => 'CEO & Founder',
-    'ceo_bio' => 'Former Microsoft executive with 15+ years experience leading digital transformation initiatives for Fortune 500 companies.',
-
-    'cto_role' => 'CTO',
-    'cto_bio' => 'Cloud architecture expert and former Google engineer specializing in scalable systems and AI/ML implementations.',
-
-    'vp_role' => 'VP of Engineering',
-    'vp_bio' => 'Full-stack development leader with expertise in modern frameworks and agile methodologies, former Amazon principal engineer.',
-
+    'hero_subtitle' => 'A compact team of Senior specialists with a deep background in real business. We don\'t inflate staff — we create effective IT solutions without intermediaries and bureaucracy.',
+    'mission_title' => 'Our Approach and Mission',
+    'mission_p1' => 'At CodElevator, we believe that technology should bring profit, not just exist. Our mission is to turn complex business challenges into clear and reliable digital tools. We look at code through the eyes of a business owner, focusing on product logic, efficiency, and ROI.',
+    'mission_p2' => 'We consciously maintain the format of a small expert group. This guarantees you direct contact with leading developers and architects without a layer of managers. Everyone on our team is a professional with ten years of experience in niches such as logistics, retail, and service automation. For us, every project is a personal challenge and reputation.',
+    'mission_p3' => 'Since 2014, we have gone from supporting local companies to developing complex ecosystems for clients from the EU and the USA. Today, working in the legal field of the European Union (Poland), we provide our partners not only with technological excellence but also with full legal transparency and European quality standards.',
+    'tech_stack_title' => 'Technical Stack',
+    'team_title' => 'Our',
+    'team_highlight' => ' Team',
+    'team_subtitle' => 'A combination of decades of experience in software development, business strategy, and digital innovation.',
+    'ceo_role' => 'Founder & Lead Architect',
+    'ceo_bio' => 'Entrepreneur with 15 years of management experience in the real sector and more than 10 years of experience in development (Laravel/PHP). An expert in business logic automation who understands the product not only as code but as a tool for generating profit.',
+    'cto_role' => 'Head of Digital Marketing & Content Strategist',
+    'cto_bio' => 'Specialist in strategic promotion and SMM. Focuses on creating a brand\'s digital presence and building effective communication with the audience. Helps businesses convert technical solutions into customer loyalty.',
+    'vp_role' => 'Senior Full-stack Developer',
+    'vp_bio' => 'Engineer with 10 years of experience in designing complex web systems. Master of building architecture on Laravel and creating reactive interfaces on VueJS. Proponent of clean code and high performance in every project.',
     'values_title' => 'Our Core',
-    'values_highlight' => 'Values',
-    'values_subtitle' => 'These principles guide everything we do and shape how we work with our clients and each other.',
-
-    'value1_title' => 'Innovation',
-    'value1_desc' => 'We constantly explore new technologies and methodologies to deliver cutting-edge solutions that give our clients a competitive advantage.',
-
-    'value2_title' => 'Excellence',
-    'value2_desc' => 'We maintain the highest standards in everything we do, from code quality to client communication and project delivery.',
-
-    'value3_title' => 'Collaboration',
-    'value3_desc' => 'We believe in true partnership with our clients, working together as an extension of their team to achieve shared goals.',
-
-    'value4_title' => 'Integrity',
-    'value4_desc' => 'We operate with complete transparency, honesty, and ethical practices in all our business relationships and decisions.',
+    'values_highlight' => 'Principles',
+    'values_subtitle' => 'We don\'t just write code. We build relationships on the foundation of experience, common sense, and responsibility for results.',
+    'value1_title' => 'Pragmatic Approach',
+    'value1_desc' => 'We choose technologies that work for your business, not those that are currently trending. Our goal is a reliable solution with minimal future maintenance costs.',
+    'value2_title' => 'Deep Expertise',
+    'value2_desc' => 'There are no interns in our team. Your project is handled by specialists with 10 years of experience who have seen hundreds of cases and know how to avoid critical architectural mistakes.',
+    'value3_title' => 'No Bureaucracy',
+    'value3_desc' => 'You work directly with the developers. This eliminates "broken telephone", speeds up development significantly, and allows for quick implementation of changes without approval from a dozen managers.',
+    'value4_title' => 'Honesty and Results',
+    'value4_desc' => 'We work transparently. If we see that a function is redundant or will not bring value to your business, we will say so directly. We value our reputation and your budget.',
 ];
