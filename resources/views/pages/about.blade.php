@@ -39,10 +39,10 @@
                     <p class="text-sm text-bright-cyan font-semibold mb-3">Backend & Databases</p>
                     <div class="grid grid-cols-3 gap-4">
                         <div class="bg-slate-800/50 rounded-lg p-3 flex items-center justify-center hover:bg-slate-700/50 transition-all hover:scale-105">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" class="h-10 w-10">
+                            <img src="{{ asset('img/logos/php.svg') }}" alt="PHP" class="h-10 w-10">
                         </div>
                         <div class="bg-slate-800/50 rounded-lg p-3 flex items-center justify-center hover:bg-slate-700/50 transition-all hover:scale-105">
-                            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain.svg" alt="Laravel" class="h-10 w-10">
+                            <img src="{{ asset('img/logos/laravel.svg') }}" alt="Laravel" class="h-10 w-10">
                         </div>
                         <div class="bg-slate-800/50 rounded-lg p-3 flex items-center justify-center hover:bg-slate-700/50 transition-all hover:scale-105">
                             <svg class="h-10 w-10 text-bright-indigo" fill="currentColor" viewBox="0 0 24 24">
