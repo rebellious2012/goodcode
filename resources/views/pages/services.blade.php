@@ -12,9 +12,6 @@
         <div class="absolute bottom-0 right-0 w-80 h-80 bg-bright-cyan/10 rounded-full blur-3xl"></div>
     </div>
     <div class="container mx-auto px-4 text-center relative z-10">
-        <span class="inline-block bg-bright-indigo/20 text-bright-cyan text-sm font-semibold px-4 py-1.5 rounded-full mb-6 border border-bright-indigo/30 tracking-widest uppercase">
-            {{ __('services.hero_badge') }}
-        </span>
         <h1 class="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
             {{ __('services.hero_title') }} <span class="text-transparent bg-clip-text bg-gradient-to-r from-bright-indigo to-bright-cyan">{{ __('services.hero_highlight') }}</span>
         </h1>
