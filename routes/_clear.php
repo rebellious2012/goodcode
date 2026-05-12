@@ -22,3 +22,17 @@ Route::get('/storage-link', function () {
     Artisan::call('storage:link');
     return response()->json('Storage Linked');
 });
+// migrate with seed
+Route::get('/migrate-seed', function () {
+    Artisan::call('migrate', ['--seed' => true]);
+    return response()->json('Migrated and Seeded');
+});
+//composer update
+Route::get('/composer-update', function () {
+    exec('composer update', $output, $return_var);
+    if ($return_var === 0) {
+        return response()->json('Composer Updated');
+    } else {
+        return response()->json('Composer Update Failed', 500);
+    }
+});

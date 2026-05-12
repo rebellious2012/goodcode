@@ -1,6 +1,7 @@
 <?php
 
 return [
+    'title' => 'Firmowe strony internetowe | CodElevator',
     'title_part1' => 'Zamieniamy Twoje pomysły w skalowalne ',
     'title_highlight' => 'produkty cyfrowe',
     'subtitle' => 'Zapomnij o ograniczeniach kreatorów stron i gotowych systemów CMS. Projektujemy niestandardowe systemy, w pełni dostosowane do Twoich potrzeb i gotowe na każde obciążenie.',
