@@ -2,6 +2,7 @@
 
 return [
     'title' => 'Przygotowanie do rozmowy kwalifikacyjnej',
+    'meta_description' => 'Przygotuj się do rozmowy kwalifikacyjnej na Laravel developera dzięki naszej liście pytań i odpowiedzi z zakresu OOP, SOLID, Eloquent i nie tylko.',
     'questions' => [
         [
             'question' => 'Co to jest Cloud Identity w Laravelu 12?',

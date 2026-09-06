@@ -4,6 +4,7 @@ return [
     'header_home' => 'Strona Główna',
     'header_about' => 'O nas',
     'header_services' => 'Usługi',
+    'header_website_for_company' => 'Strony dla firm',
     'header_portfolio' => 'Portfolio',
     'header_blog' => 'Blog',
     'header_contact' => 'Kontakt',

@@ -4,6 +4,7 @@ return [
     'header_home' => 'Головна',
     'header_about' => 'Про нас',
     'header_services' => 'Послуги',
+    'header_website_for_company' => 'Сайти для компаній',
     'header_portfolio' => 'Портфоліо',
     'header_blog' => 'Блог',
     'header_contact' => 'Контакти',

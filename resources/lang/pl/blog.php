@@ -2,6 +2,7 @@
 
 return [
     'title' => 'Blog - CodElevator Solutions | Najnowsze spostrzeżenia technologiczne i wiadomości branżowe',
+    'meta_description' => 'Bądź na bieżąco dzięki naszym najnowszym spostrzeżeniom na temat trendów technologicznych, dobrych praktyk i innowacji branżowych.',
     'hero_title' => 'Spostrzeżenia',
     'hero_highlight' => 'Technologiczne',
     'hero_subtitle' => 'Bądź na bieżąco dzięki naszym najnowszym spostrzeżeniom na temat trendów technologicznych, dobrych praktyk i innowacji branżowych.',

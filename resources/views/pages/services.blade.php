@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('title', __('services.title'))
+@section('meta_description', __('services.meta_description'))
 
 @section('content')
 
@@ -71,7 +72,7 @@
                     @endforeach
                 </ul>
 
-                <a href="/contact" class="inline-block bg-gradient-to-r from-bright-indigo to-bright-cyan text-white px-8 py-4 rounded-xl font-semibold hover:shadow-lg hover:shadow-bright-indigo/30 transition-all duration-300">
+                <a href="{{ route('contact') }}" class="inline-block bg-gradient-to-r from-bright-indigo to-bright-cyan text-white px-8 py-4 rounded-xl font-semibold hover:shadow-lg hover:shadow-bright-indigo/30 transition-all duration-300">
                     {{ __('services.crm_discuss_btn') }}
                 </a>
             </div>
@@ -184,7 +185,7 @@
 
         <div class="text-center">
             <p class="text-gray-400 mb-5">{{ __('services.ready_demo_text') }}</p>
-            <a href="/contact" class="inline-block bg-gradient-to-r from-bright-cyan to-bright-indigo text-white px-8 py-4 rounded-xl font-semibold hover:shadow-lg hover:shadow-bright-cyan/30 transition-all duration-300">
+            <a href="{{ route('contact') }}" class="inline-block bg-gradient-to-r from-bright-cyan to-bright-indigo text-white px-8 py-4 rounded-xl font-semibold hover:shadow-lg hover:shadow-bright-cyan/30 transition-all duration-300">
                 {{ __('services.ready_demo_btn') }}
             </a>
         </div>
@@ -258,7 +259,7 @@
                     <span class="text-sm bg-slate-800 text-gray-300 px-3 py-1.5 rounded-lg border border-slate-700">{{ $pl }}</span>
                     @endforeach
                 </div>
-                <a href="/contact" class="inline-block bg-gradient-to-r from-bright-cyan to-bright-indigo text-white px-8 py-4 rounded-xl font-semibold hover:shadow-lg hover:shadow-bright-cyan/30 transition-all duration-300">
+                <a href="{{ route('contact') }}" class="inline-block bg-gradient-to-r from-bright-cyan to-bright-indigo text-white px-8 py-4 rounded-xl font-semibold hover:shadow-lg hover:shadow-bright-cyan/30 transition-all duration-300">
                     {{ __('services.seo_strategy_btn') }}
                 </a>
             </div>
@@ -307,7 +308,7 @@
                     @endforeach
                 </ul>
 
-                <a href="/contact" class="inline-block bg-gradient-to-r from-bright-indigo to-bright-cyan text-white px-8 py-4 rounded-xl font-semibold hover:shadow-lg hover:shadow-bright-indigo/30 transition-all duration-300">
+                <a href="{{ route('contact') }}" class="inline-block bg-gradient-to-r from-bright-indigo to-bright-cyan text-white px-8 py-4 rounded-xl font-semibold hover:shadow-lg hover:shadow-bright-indigo/30 transition-all duration-300">
                     {{ __('services.design_discuss_btn') }}
                 </a>
             </div>
@@ -405,7 +406,7 @@
                     </ul>
                 </div>
 
-                <a href="/contact" class="inline-block bg-gradient-to-r from-bright-indigo to-bright-cyan text-white px-8 py-4 rounded-xl font-semibold hover:shadow-lg hover:shadow-bright-indigo/30 transition-all duration-300">
+                <a href="{{ route('contact') }}" class="inline-block bg-gradient-to-r from-bright-indigo to-bright-cyan text-white px-8 py-4 rounded-xl font-semibold hover:shadow-lg hover:shadow-bright-indigo/30 transition-all duration-300">
                     {{ __('services.audit_btn') }}
                 </a>
             </div>
@@ -494,7 +495,7 @@
                 <div>
                     <h3 class="text-xl font-bold text-white mb-3">{{ __('services.api_payment_title') }}</h3>
                     <p class="text-gray-400 text-sm mb-4">{{ __('services.api_payment_desc') }}</p>
-                    <a href="/contact" class="inline-block bg-gradient-to-r from-bright-indigo to-bright-cyan text-white px-7 py-3.5 rounded-xl font-semibold text-sm hover:shadow-lg hover:shadow-bright-indigo/30 transition-all duration-300">
+                    <a href="{{ route('contact') }}" class="inline-block bg-gradient-to-r from-bright-indigo to-bright-cyan text-white px-7 py-3.5 rounded-xl font-semibold text-sm hover:shadow-lg hover:shadow-bright-indigo/30 transition-all duration-300">
                         {{ __('services.api_payment_btn') }}
                     </a>
                 </div>
@@ -506,6 +507,29 @@
             </div>
         </div>
     </div>
+</section>
+
+
+{{-- ========== LANDING PAGES LINKS (inside Ready Solutions) ========== --}}
+<div class="text-center mt-12">
+    <p class="text-gray-400 mb-5">{{ __('services.ready_landings_label') }}</p>
+    <div class="flex flex-wrap justify-center gap-4">
+        <a href="{{ route('services.website-for-company') }}" class="inline-flex items-center gap-2 text-sm border border-slate-600 hover:border-bright-cyan/50 hover:text-bright-cyan text-gray-300 rounded-full px-5 py-2.5 transition-colors duration-300">
+            {{ __('app.header_website_for_company') }} <span>→</span>
+        </a>
+        <a href="{{ route('solutions.real-estate') }}" class="inline-flex items-center gap-2 text-sm border border-slate-600 hover:border-bright-cyan/50 hover:text-bright-cyan text-gray-300 rounded-full px-5 py-2.5 transition-colors duration-300">
+            {{ __('services.ready_solution_1_title') }} <span>→</span>
+        </a>
+    </div>
+</div>
+
+<div class="text-center mt-10">
+        <p class="text-gray-400 mb-5">{{ __('services.ready_demo_text') }}</p>
+        <a href="{{ route('contact') }}" class="inline-block bg-gradient-to-r from-bright-cyan to-bright-indigo text-white px-8 py-4 rounded-xl font-semibold hover:shadow-lg hover:shadow-bright-cyan/30 transition-all duration-300">
+            {{ __('services.ready_demo_btn') }}
+        </a>
+    </div>
+</div>
 </section>
 
 

@@ -2,6 +2,7 @@
 
 return [
     'title' => 'Modern Corporate Websites | CodElevator',
+    'meta_description' => 'Forget the limitations of website builders and ready-made CMS. We design custom systems, fully tailored to your needs and ready for any load.',
     'title_part1' => 'We turn your ideas into scalable ',
     'title_highlight' => 'digital products',
     'subtitle' => 'Forget the limitations of website builders and ready-made CMS. We design custom systems, fully tailored to your needs and ready for any load.',

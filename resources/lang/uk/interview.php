@@ -2,6 +2,7 @@
 
 return [
     'title' => 'Підготовка до співбесіди',
+    'meta_description' => 'Підготуйтеся до співбесіди на Laravel-розробника з нашим списком питань та відповідей щодо ООП, SOLID, Eloquent та інших тем.',
     'questions' => [
         [
             'question' => 'Що таке Cloud Identity у Laravel 12?',

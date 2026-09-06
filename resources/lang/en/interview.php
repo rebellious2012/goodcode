@@ -2,6 +2,7 @@
 
 return [
     'title' => 'Interview preparation',
+    'meta_description' => 'Prepare for your Laravel developer interview with our comprehensive list of questions and answers covering OOP, SOLID, Eloquent, and more.',
     'questions' => [
         [
             'question' => 'What is Cloud Identity in Laravel 12?',

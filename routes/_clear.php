@@ -1,6 +1,11 @@
 <?php
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\App;
+
+if (! App::environment('local', 'staging', 'testing')) {
+    return;
+}
 
 Route::get('/clear', function () {
     Artisan::call('cache:clear');

@@ -1,5 +1,8 @@
 @extends('layouts.app')
 
+@section('title', __('interview.title'))
+@section('meta_description', __('interview.meta_description'))
+
 @section('content')
 <div class="container mx-auto px-4 py-8">
     <h1 class="text-4xl font-bold text-center mb-10">{{ __('interview.title') }}</h1>

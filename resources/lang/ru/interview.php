@@ -2,6 +2,7 @@
 
 return [
     'title' => 'Подготовка к собеседованию',
+    'meta_description' => 'Подготовьтесь к собеседованию на Laravel-разработчика с нашим списком вопросов и ответов по ООП, SOLID, Eloquent и другим темам.',
     'questions' => [
         [
             'question' => 'Что такое Cloud Identity в Laravel 12?',

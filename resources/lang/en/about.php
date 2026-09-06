@@ -2,6 +2,7 @@
 
 return [
     'title' => 'About Us - CodElevator Solutions | Our Mission, Team and Values',
+    'meta_description' => 'A compact team of Senior specialists with a deep background in real business. We don\'t inflate staff — we create effective IT solutions without intermediaries and bureaucracy.',
     'hero_title' => 'About',
     'hero_highlight' => 'CodElevator Solutions',
     'hero_subtitle' => 'A compact team of Senior specialists with a deep background in real business. We don\'t inflate staff — we create effective IT solutions without intermediaries and bureaucracy.',

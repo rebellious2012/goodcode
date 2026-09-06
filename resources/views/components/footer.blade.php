@@ -70,11 +70,11 @@
             <div>
                 <h4 class="text-lg font-semibold text-white mb-4">{{ __('app.footer_quick_links') }}</h4>
                 <ul class="space-y-2">
-                    <li><a href="/about" class="text-gray-400 hover:text-bright-cyan transition-colors duration-300">{{ __('app.header_about') }}</a></li>
-                    <li><a href="/services" class="text-gray-400 hover:text-bright-cyan transition-colors duration-300">{{ __('app.header_services') }}</a></li>
-                    <li><a href="/portfolio" class="text-gray-400 hover:text-bright-cyan transition-colors duration-300">{{ __('app.header_portfolio') }}</a></li>
-                    <li><a href="/blog" class="text-gray-400 hover:text-bright-cyan transition-colors duration-300">{{ __('app.header_blog') }}</a></li>
-                    <li><a href="/contact" class="text-gray-400 hover:text-bright-cyan transition-colors duration-300">{{ __('app.header_contact') }}</a></li>
+                    <li><a href="{{ route('about') }}" class="text-gray-400 hover:text-bright-cyan transition-colors duration-300">{{ __('app.header_about') }}</a></li>
+                    <li><a href="{{ route('services') }}" class="text-gray-400 hover:text-bright-cyan transition-colors duration-300">{{ __('app.header_services') }}</a></li>
+                    <li><a href="{{ route('portfolio') }}" class="text-gray-400 hover:text-bright-cyan transition-colors duration-300">{{ __('app.header_portfolio') }}</a></li>
+                    <li><a href="{{ route('blog') }}" class="text-gray-400 hover:text-bright-cyan transition-colors duration-300">{{ __('app.header_blog') }}</a></li>
+                    <li><a href="{{ route('contact') }}" class="text-gray-400 hover:text-bright-cyan transition-colors duration-300">{{ __('app.header_contact') }}</a></li>
                 </ul>
             </div>
             
@@ -91,9 +91,7 @@
         
         <div class="border-t border-slate-800 mt-8 pt-8 text-center">
             <p class="text-gray-400">
-                {!! __('app.footer_copyright') !!} |
-                <a href="/privacy" class="hover:text-bright-cyan transition-colors">{{ __('app.footer_privacy') }}</a> |
-                <a href="/terms" class="hover:text-bright-cyan transition-colors">{{ __('app.footer_terms') }}</a>
+                {!! __('app.footer_copyright') !!}
             </p>
         </div>
     </div>

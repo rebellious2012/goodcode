@@ -2,6 +2,7 @@
 
 return [
     'title' => 'O nas - CodElevator Solutions | Nasza misja, zespół i wartości',
+    'meta_description' => 'Kompaktowy zespół specjalistów Senior z dużym doświadczeniem w realnym biznesie. Nie rozdmuchujemy etatów — tworzymy efektywne rozwiązania IT bez pośredników i biurokracji.',
     'hero_title' => 'O nas',
     'hero_highlight' => 'CodElevator Solutions',
     'hero_subtitle' => 'Kompaktowy zespół specjalistów Senior z dużym doświadczeniem w realnym biznesie. Nie rozdmuchujemy etatów — tworzymy efektywne rozwiązania IT bez pośredników i biurokracji.',

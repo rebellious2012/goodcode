@@ -1,2 +1,10 @@
 User-agent: *
-Disallow:
+Disallow: /admin
+Disallow: /templates
+Disallow: /clear
+Disallow: /migrate
+Disallow: /migrate-seed
+Disallow: /storage-link
+Disallow: /composer-update
+
+Sitemap: https://codelevator.top/sitemap.xml

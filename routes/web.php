@@ -17,6 +17,7 @@ Route::group([
     Route::get('/', HomeController::class)->name('home');
     Route::get('/about', AboutController::class)->name('about');
     Route::get('/services', ServicesController::class)->name('services');
+    Route::get('/services/website-for-company', App\Http\Controllers\WebsiteForCompanyController::class)->name('services.website-for-company');
     Route::get('/solutions/real-estate', function () {
         return view('pages.solutions.real-estate');
     })->name('solutions.real-estate');
@@ -54,6 +55,8 @@ Route::middleware(['web'])->prefix('admin')->name('admin.')->group(function () {
         ]);
     });
 });
+
+Route::get('/sitemap.xml', [App\Http\Controllers\SitemapController::class, 'index']);
 
 require __DIR__.'/_clear.php';
 require __DIR__.'/_setlocale.php';

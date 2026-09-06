@@ -2,6 +2,7 @@
 
 return [
     'title' => 'Portfolio - CodElevator Solutions | Nasze Sukcesy i Studia Przypadków',
+    'meta_description' => 'Poznaj nasze zrealizowane projekty i zobacz, jak pomogliśmy firmom z różnych branż osiągnąć cele transformacji cyfrowej.',
     'page_hero_title' => 'Nasze',
     'page_hero_highlight' => 'Portfolio',
     'page_hero_subtitle' => 'Poznaj nasze zrealizowane projekty i zobacz, jak pomogliśmy firmom z różnych branż osiągnąć cele transformacji cyfrowej.',

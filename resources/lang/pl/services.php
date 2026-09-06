@@ -2,6 +2,7 @@
 
 return [
     'title' => 'Nasze Usługi — CodElevator Solutions | Tworzenie CRM, ERP, SEO i rozwiązań SI',
+    'meta_description' => 'Kompleksowe rozwiązania technologiczne zaprojektowane, aby przyspieszyć rozwój Twojego biznesu i proces transformacji cyfrowej.',
     'hero_title' => 'Nasze',
     'hero_highlight' => 'Usługi',
     'hero_subtitle' => 'Kompleksowe rozwiązania technologiczne zaprojektowane, aby przyspieszyć rozwój Twojego biznesu i proces transformacji cyfrowej.',
@@ -194,4 +195,7 @@ return [
     'cta_feature_free' => 'Bezpłatna wstępna konsultacja',
     'cta_feature_quote' => 'Oferta bez zobowiązań',
     'cta_feature_response' => 'Czas odpowiedzi 24 godziny',
+
+    // Landing pages links (inside Ready Solutions)
+    'ready_landings_label' => 'Dedykowane podstrony:',
 ];

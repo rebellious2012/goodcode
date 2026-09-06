@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Real Estate Website Solution - CodElevator')
+@section('title', __('services.ready_solution_1_title') . ' - CodElevator Solutions')
+@section('meta_description', __('services.ready_solution_1_desc'))
 
 @section('content')
 <!-- Hero Section -->

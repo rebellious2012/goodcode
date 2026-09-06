@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('title', __('home.title'))
+@section('meta_description', __('home.meta_description'))
 
 @section('content')
     @include('components.hero')

@@ -5,6 +5,7 @@ return [
     'header_home' => 'Home',
     'header_about' => 'About Us',
     'header_services' => 'Services',
+    'header_website_for_company' => 'Websites for Companies',
     'header_portfolio' => 'Portfolio',
     'header_blog' => 'Blog',
     'header_contact' => 'Contact',

@@ -2,6 +2,7 @@
 
 return [
     'title' => 'Portfolio - CodElevator Solutions | Our Success Stories & Case Studies',
+    'meta_description' => 'Explore our successful projects and discover how we\'ve helped businesses across various industries achieve their digital transformation goals.',
 
     // Page Hero
     'page_hero_title' => 'Our',

@@ -9,7 +9,7 @@
             </p>
             
             <div class="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-                <a href="/contact" class="bg-white text-bright-indigo px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:-translate-y-1 shadow-lg">
+                <a href="{{ route('contact') }}" class="bg-white text-bright-indigo px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all duration-300 transform hover:-translate-y-1 shadow-lg">
                     {{ __('services.cta_button_contact') }}
                 </a>
                 <a href="https://t.me/green4kife" class="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-white hover:text-bright-indigo transition-all duration-300" target="_blank" rel="noopener">

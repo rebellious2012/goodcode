@@ -2,6 +2,7 @@
 
 return [
     'title' => 'Blog - CodElevator Solutions | Latest Tech Insights & Industry News',
+    'meta_description' => 'Stay ahead of the curve with our latest insights on technology trends, best practices, and industry innovations.',
 
     // Hero
     'hero_title' => 'Tech',

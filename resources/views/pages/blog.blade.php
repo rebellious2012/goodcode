@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('title', __('blog.title'))
+@section('meta_description', __('blog.meta_description'))
 
 @section('content')
 <!-- Hero Section -->

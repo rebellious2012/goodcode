@@ -2,6 +2,7 @@
 
 return [
     'title' => 'Our Services — CodElevator Solutions | CRM, ERP, SEO & AI Development',
+    'meta_description' => 'Comprehensive technology solutions designed to accelerate your business growth and digital transformation journey.',
     'hero_title' => 'Our',
     'hero_highlight' => 'Services',
     'hero_subtitle' => 'Comprehensive technology solutions designed to accelerate your business growth and digital transformation journey.',
@@ -194,4 +195,7 @@ return [
     'cta_feature_free' => 'Free Initial Consultation',
     'cta_feature_quote' => 'No Obligation Quote',
     'cta_feature_response' => '24-Hour Response Time',
+
+    // Landing pages links (inside Ready Solutions)
+    'ready_landings_label' => 'Dedicated pages:',
 ];
