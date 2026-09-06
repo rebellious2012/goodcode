@@ -22,8 +22,8 @@
                 </div>
                 <h3 class="text-2xl font-bold text-white mb-4">{{ __('home.service_software_title') }}</h3>
                 <p class="text-gray-300 mb-6">{{ __('home.service_software_desc') }}</p>
-                <a href="/services" class="text-bright-cyan hover:text-bright-indigo transition-colors font-semibold">
-                    {{ __('home.learn_more') }} →
+                <a href="{{ route('services') }}" class="text-bright-cyan hover:text-bright-indigo transition-colors font-semibold">
+                    {{ __('home.service_software_cta') }} →
                 </a>
             </div>
 
@@ -37,9 +37,9 @@
                 </div>
     <h3 class="text-2xl font-bold text-white mb-4">{{ __('home.service_ready_title') }}</h3>
     <p class="text-gray-300 mb-6">{{ __('home.service_ready_desc') }}</p>
-    <a href="/services" class="text-bright-cyan hover:text-bright-indigo transition-colors font-semibold">
-        {{ __('home.learn_more') }} →
-    </a>
+<a href="{{ route('services') }}" class="text-bright-cyan hover:text-bright-indigo transition-colors font-semibold">
+                    {{ __('home.service_ready_cta') }} →
+                </a>
 </div>
             <!-- Mobile App Development -->
             <div class="bg-slate-900/80 backdrop-blur-sm border border-slate-700 rounded-xl p-8 hover:border-bright-indigo transition-all duration-300 group">
@@ -50,8 +50,8 @@
                 </div>
                 <h3 class="text-2xl font-bold text-white mb-4">{{ __('home.service_3') }}</h3>
                 <p class="text-gray-300 mb-6">{{ __('home.service_3_desc') }}</p>
-                <a href="/services" class="text-bright-cyan hover:text-bright-indigo transition-colors font-semibold">
-                    {{ __('home.learn_more') }} →
+                <a href="{{ route('services') }}" class="text-bright-cyan hover:text-bright-indigo transition-colors font-semibold">
+                    {{ __('home.service_3_cta') }} →
                 </a>
             </div>
 
@@ -64,8 +64,8 @@
                 </div>
                 <h3 class="text-2xl font-bold text-white mb-4">{{ __('home.service_design_title') }}</h3>
                 <p class="text-gray-300 mb-6">{{ __('home.service_design_desc') }}</p>
-                <a href="/services" class="text-bright-cyan hover:text-bright-indigo transition-colors font-semibold">
-                    {{ __('home.learn_more') }} →
+                <a href="{{ route('services') }}" class="text-bright-cyan hover:text-bright-indigo transition-colors font-semibold">
+                    {{ __('home.service_design_cta') }} →
                 </a>
             </div>
 
@@ -78,8 +78,8 @@
                 </div>
                 <h3 class="text-2xl font-bold text-white mb-4">{{ __('home.service_consulting_title') }}</h3>
                 <p class="text-gray-300 mb-6">{{ __('home.service_consulting_desc') }}</p>
-                <a href="/services" class="text-bright-cyan hover:text-bright-indigo transition-colors font-semibold">
-                    {{ __('home.learn_more') }} →
+                <a href="{{ route('services') }}" class="text-bright-cyan hover:text-bright-indigo transition-colors font-semibold">
+                    {{ __('home.service_consulting_cta') }} →
                 </a>
             </div>
 
@@ -92,8 +92,8 @@
                 </div>
                 <h3 class="text-2xl font-bold text-white mb-4">{{ __('home.service_security_title') }}</h3>
                 <p class="text-gray-300 mb-6">{{ __('home.service_security_desc') }}</p>
-                <a href="/services" class="text-bright-cyan hover:text-bright-indigo transition-colors font-semibold">
-                    {{ __('home.learn_more') }} →
+                <a href="{{ route('services') }}" class="text-bright-cyan hover:text-bright-indigo transition-colors font-semibold">
+                    {{ __('home.service_security_cta') }} →
                 </a>
             </div>
         </div>
