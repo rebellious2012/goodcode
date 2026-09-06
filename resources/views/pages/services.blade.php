@@ -88,7 +88,7 @@
                     ['Docker / CI/CD', __('services.crm_stack_deploy_name'), __('services.crm_stack_deploy_desc')],
                 ] as [$name, $cat, $desc])
                 <div class="bg-slate-800 border border-slate-700 rounded-xl p-5 hover:border-bright-cyan/40 transition-colors group">
-                    <div class="text-bright-cyan text-xs font-semibold uppercase tracking-wider mb-1 group-hover:text-bright-indigo transition-colors">{{ $cat }}</div>
+                    <div class="text-bright-cyan text-xs font-semibold uppercase tracking-wider mb-1 group-hover:text-bright-indigo-light transition-colors">{{ $cat }}</div>
                     <div class="text-white font-bold mb-1">{{ $name }}</div>
                     <div class="text-gray-400 text-xs">{{ $desc }}</div>
                 </div>

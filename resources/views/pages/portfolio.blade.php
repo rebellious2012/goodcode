@@ -76,12 +76,12 @@
                     </p>
                     <div class="flex flex-wrap gap-2 mb-4">
                         @foreach($item->technologies as $tech)
-                        <span class="px-3 py-1 bg-bright-indigo/20 text-bright-indigo rounded-full text-sm">{{ $tech }}</span>
+                        <span class="px-3 py-1 bg-bright-indigo-light/20 text-bright-indigo-light rounded-full text-sm">{{ $tech }}</span>
                         @endforeach
                     </div>
                     <div class="flex justify-between items-center">
                         <span class="text-gray-400 text-sm">{{ $item->category }}</span>
-                        <a href="#" class="text-bright-cyan hover:text-bright-indigo transition-colors font-semibold">
+                        <a href="#" class="text-bright-cyan hover:text-bright-indigo-light transition-colors font-semibold">
                             {{ __('portfolio.view_details') }} →
                         </a>
                     </div>

@@ -40,7 +40,7 @@
                             $tags = ['Tech', 'Laravel', 'Web Development'];
                          @endphp
                             @foreach($tags as $tag)
-                                <span class="px-3 py-1 bg-bright-indigo/20 text-bright-indigo rounded-full text-sm">{{ $tag }}</span>
+                                <span class="px-3 py-1 bg-bright-indigo-light/20 text-bright-indigo-light rounded-full text-sm">{{ $tag }}</span>
                             @endforeach
                      
                         <span class="text-gray-400 text-sm">{{ date('M d, Y') }}</span>
@@ -60,7 +60,7 @@
                                 <div class="text-white font-semibold">author </div>
                             </div>
                         </div>
-                        <a href="{{ route('interview-questions')}}" class="text-bright-cyan hover:text-bright-indigo transition-colors font-semibold">
+                        <a href="{{ route('interview-questions')}}" class="text-bright-cyan hover:text-bright-indigo-light transition-colors font-semibold">
                             {{ __('blog.read_more') }} →
                         </a>
                     </div>
@@ -111,7 +111,7 @@
                             </div>
                             <span class="text-gray-400 text-sm">{{ $post->author }}</span>
                         </div>
-                        <a href="#" class="text-bright-cyan hover:text-bright-indigo transition-colors font-semibold">
+                        <a href="#" class="text-bright-cyan hover:text-bright-indigo-light transition-colors font-semibold">
                             {{ __('blog.read_more') }} →
                         </a>
                     </div>

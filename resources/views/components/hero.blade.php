@@ -25,7 +25,7 @@
             
             <!-- CTA buttons -->
             <div class="flex justify-center gap-4 mb-10">
-                <a href="#contact" class="btn btn-primary px-6 py-3 bg-bright-indigo hover:bg-bright-cyan text-white rounded-lg font-semibold shadow-lg transition duration-300">
+                <a href="{{ route('contact') }}" class="btn btn-primary px-6 py-3 bg-bright-indigo hover:bg-bright-cyan text-white rounded-lg font-semibold shadow-lg transition duration-300">
                     {{ __('home.cta_primary') }}
                 </a>
                 <a href="#services" class="btn btn-outline px-6 py-3 border-2 border-bright-indigo hover:bg-bright-indigo text-white rounded-lg font-semibold transition duration-300">

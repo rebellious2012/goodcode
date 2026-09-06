@@ -81,6 +81,7 @@
                     colors: {
                         'deep-blue': '#0f172a',
                         'bright-indigo': '#6366f1',
+                        'bright-indigo-light': '#818cf8',
                         'bright-cyan': '#22d3ee'
                     }
                 }

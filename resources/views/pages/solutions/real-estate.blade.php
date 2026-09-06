@@ -13,9 +13,9 @@
         <div class="max-w-4xl">
             <nav class="flex mb-8 text-sm text-gray-400" aria-label="Breadcrumb">
                 <ol class="inline-flex items-center space-x-2">
-                    <li><a href="{{ route('home') }}" class="hover:text-bright-indigo transition-colors">Home</a></li>
+                    <li><a href="{{ route('home') }}" class="hover:text-bright-indigo-light transition-colors">Home</a></li>
                     <li><span class="text-gray-600">/</span></li>
-                    <li><a href="{{ route('services') }}" class="hover:text-bright-indigo transition-colors">Solutions</a></li>
+                    <li><a href="{{ route('services') }}" class="hover:text-bright-indigo-light transition-colors">Solutions</a></li>
                     <li><span class="text-gray-600">/</span></li>
                     <li class="text-gray-300">Real Estate</li>
                 </ol>
@@ -124,15 +124,15 @@
                 <h2 class="text-4xl font-bold text-white mb-6">Backend Management Made Simple</h2>
                 <ul class="space-y-6">
                     <li class="flex items-start">
-                        <div class="w-6 h-6 bg-bright-indigo/20 text-bright-indigo rounded-full flex items-center justify-center mt-1 mr-4 shrink-0 font-bold text-xs">✓</div>
+                        <div class="w-6 h-6 bg-bright-indigo-light/20 text-bright-indigo-light rounded-full flex items-center justify-center mt-1 mr-4 shrink-0 font-bold text-xs">✓</div>
                         <p class="text-gray-300"><span class="text-white font-semibold">Lead Tracking:</span> Capture inquires from forms and WhatsApp directly into your dashboard.</p>
                     </li>
                     <li class="flex items-start">
-                        <div class="w-6 h-6 bg-bright-indigo/20 text-bright-indigo rounded-full flex items-center justify-center mt-1 mr-4 shrink-0 font-bold text-xs">✓</div>
+                        <div class="w-6 h-6 bg-bright-indigo-light/20 text-bright-indigo-light rounded-full flex items-center justify-center mt-1 mr-4 shrink-0 font-bold text-xs">✓</div>
                         <p class="text-gray-300"><span class="text-white font-semibold">Bulk Upload:</span> Import hundreds of properties via CSV or XML from external services.</p>
                     </li>
                     <li class="flex items-start">
-                        <div class="w-6 h-6 bg-bright-indigo/20 text-bright-indigo rounded-full flex items-center justify-center mt-1 mr-4 shrink-0 font-bold text-xs">✓</div>
+                        <div class="w-6 h-6 bg-bright-indigo-light/20 text-bright-indigo-light rounded-full flex items-center justify-center mt-1 mr-4 shrink-0 font-bold text-xs">✓</div>
                         <p class="text-gray-300"><span class="text-white font-semibold">Notifications:</span> Email and SMS alerts for new listings matching users' criteria.</p>
                     </li>
                 </ul>

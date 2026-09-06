@@ -28,9 +28,9 @@
                         Built a scalable e-commerce platform handling 100K+ daily transactions with advanced inventory management and AI-powered recommendations.
                     </p>
                     <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-3 py-1 bg-bright-indigo/20 text-bright-indigo rounded-full text-sm">React</span>
+                        <span class="px-3 py-1 bg-bright-indigo-light/20 text-bright-indigo-light rounded-full text-sm">React</span>
                         <span class="px-3 py-1 bg-bright-cyan/20 text-bright-cyan rounded-full text-sm">Node.js</span>
-                        <span class="px-3 py-1 bg-bright-indigo/20 text-bright-indigo rounded-full text-sm">AWS</span>
+                        <span class="px-3 py-1 bg-bright-indigo-light/20 text-bright-indigo-light rounded-full text-sm">AWS</span>
                     </div>
                 </div>
             </div>
@@ -52,7 +52,7 @@
                     </p>
                     <div class="flex flex-wrap gap-2 mb-4">
                         <span class="px-3 py-1 bg-bright-cyan/20 text-bright-cyan rounded-full text-sm">Flutter</span>
-                        <span class="px-3 py-1 bg-bright-indigo/20 text-bright-indigo rounded-full text-sm">Python</span>
+                        <span class="px-3 py-1 bg-bright-indigo-light/20 text-bright-indigo-light rounded-full text-sm">Python</span>
                         <span class="px-3 py-1 bg-bright-cyan/20 text-bright-cyan rounded-full text-sm">Blockchain</span>
                     </div>
                 </div>
@@ -74,9 +74,9 @@
                         Created a comprehensive telemedicine solution connecting patients with healthcare providers through secure video consultations and health monitoring.
                     </p>
                     <div class="flex flex-wrap gap-2 mb-4">
-                        <span class="px-3 py-1 bg-bright-indigo/20 text-bright-indigo rounded-full text-sm">Vue.js</span>
+                        <span class="px-3 py-1 bg-bright-indigo-light/20 text-bright-indigo-light rounded-full text-sm">Vue.js</span>
                         <span class="px-3 py-1 bg-bright-cyan/20 text-bright-cyan rounded-full text-sm">Laravel</span>
-                        <span class="px-3 py-1 bg-bright-indigo/20 text-bright-indigo rounded-full text-sm">WebRTC</span>
+                        <span class="px-3 py-1 bg-bright-indigo-light/20 text-bright-indigo-light rounded-full text-sm">WebRTC</span>
                     </div>
                 </div>
             </div>

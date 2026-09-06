@@ -1,4 +1,4 @@
-<section class="py-20 bg-gradient-to-r from-bright-indigo to-bright-cyan">
+<section id="contact" class="py-20 bg-gradient-to-r from-bright-indigo to-bright-cyan">
     <div class="container mx-auto px-4 text-center">
         <div class="max-w-4xl mx-auto">
             <h2 class="text-4xl md:text-5xl font-bold text-white mb-6">

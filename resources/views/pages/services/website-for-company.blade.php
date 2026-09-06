@@ -257,7 +257,7 @@ $serviceSchema = [
         </div>
         <p class="text-center text-gray-400 mt-8">
             {{ __('website-for-company.faq_more') }}
-            <a href="{{ route('contact') }}" class="text-bright-cyan hover:text-bright-indigo transition-colors"> → {{ __('website-for-company.hero_cta_primary') }}</a>
+            <a href="{{ route('contact') }}" class="text-bright-cyan hover:text-bright-indigo-light transition-colors"> → {{ __('website-for-company.hero_cta_primary') }}</a>
         </p>
     </div>
 </section>

@@ -69,7 +69,7 @@
                     </div>
                     <div class="flex justify-between items-center py-3">
                         <span class="text-gray-300">{{ __('contact.hours_emergency') }}</span>
-                        <span class="text-bright-indigo font-semibold">{{ __('contact.hours_emergency_time') }}</span>
+                        <span class="text-bright-indigo-light font-semibold">{{ __('contact.hours_emergency_time') }}</span>
                     </div>
                 </div>
             </div>
