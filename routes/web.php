@@ -23,7 +23,8 @@ Route::group([
     })->name('solutions.real-estate');
     Route::get('/portfolio', PortfolioController::class)->name('portfolio');
     Route::get('/blog', BlogController::class)->name('blog');
-    Route::get('/contact', ContactController::class)->name('contact');
+    Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+    Route::post('/contact', [ContactController::class, 'submit'])->name('contact.submit');
     Route::get('/interview-questions', [InterviewController::class, 'index'])->name('interview-questions');
 });
 

@@ -13,7 +13,55 @@
             
             <!-- Contact form -->
             <div class="bg-slate-900/80 backdrop-blur-sm border border-slate-700 rounded-xl p-8">
-                <form class="space-y-6" x-data="{ submitted: false }" @submit.prevent="submitted = true">
+                <form class="space-y-6" 
+                      x-data="{
+                          loading: false,
+                          submitted: false,
+                          errorMessage: '',
+                          async handleSubmit(e) {
+                              this.loading = true;
+                              this.errorMessage = '';
+                              const form = e.target;
+                              const formData = new FormData(form);
+
+                              try {
+                                  const response = await fetch('{{ route('contact.submit') }}', {
+                                      method: 'POST',
+                                      headers: {
+                                          'X-Requested-With': 'XMLHttpRequest',
+                                          'Accept': 'application/json',
+                                          'X-CSRF-TOKEN': '{{ csrf_token() }}'
+                                      },
+                                      body: formData
+                                  });
+
+                                  const data = await response.json();
+
+                                  if (response.ok && data.success) {
+                                      this.submitted = true;
+                                      form.reset();
+                                  } else {
+                                      if (data.errors) {
+                                          this.errorMessage = Object.values(data.errors).flat().join('<br>');
+                                      } else {
+                                          this.errorMessage = data.message || 'Произошла ошибка при отправке. Пожалуйста, попробуйте позже.';
+                                      }
+                                  }
+                              } catch (err) {
+                                  this.errorMessage = 'Ошибка сети. Проверьте подключение к интернету и повторите попытку.';
+                              } finally {
+                                  this.loading = false;
+                              }
+                          }
+                      }" 
+                      @submit.prevent="handleSubmit($event)">
+                    @csrf
+
+                    <!-- Honeypot anti-spam trap (hidden from real users) -->
+                    <div style="display: none !important;" aria-hidden="true">
+                        <input type="text" name="website_hp" tabindex="-1" autocomplete="off">
+                    </div>
+
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <!-- First Name -->
                         <div>
@@ -96,20 +144,31 @@
                                   placeholder="{{ __('contact.form_message_placeholder') }}"></textarea>
                     </div>
                     
-                    <!-- Submit button -->
+                    <!-- Submit button & Messages -->
                     <div class="text-center">
                         <button type="submit" 
-                                class="bg-gradient-to-r from-bright-indigo to-bright-cyan text-white px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-lg hover:shadow-bright-indigo/25 transition-all duration-300 transform hover:-translate-y-1"
+                                class="bg-gradient-to-r from-bright-indigo to-bright-cyan text-white px-8 py-4 rounded-lg font-semibold text-lg hover:shadow-lg hover:shadow-bright-indigo/25 transition-all duration-300 transform hover:-translate-y-1 disabled:opacity-50 disabled:cursor-not-allowed inline-flex items-center justify-center space-x-2 min-w-[200px]"
+                                :disabled="loading"
                                 x-show="!submitted">
-                            {{ __('contact.form_submit_button') }}
+                            <span x-show="!loading">{{ __('contact.form_submit_button') }}</span>
+                            <span x-show="loading" class="inline-flex items-center" style="display: none;">
+                                <svg class="animate-spin -ml-1 mr-2 h-5 w-5 text-white" fill="none" viewBox="0 0 24 24">
+                                    <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                                    <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                </svg>
+                                <span>{{ __('contact.sending') ?? 'Отправка...' }}</span>
+                            </span>
                         </button>
                         
+                        <!-- Error message -->
+                        <div x-show="errorMessage" x-transition class="mt-4 bg-red-500/20 border border-red-500 rounded-lg p-4 text-red-400 text-left" x-html="errorMessage" style="display: none;"></div>
+
                         <!-- Success message -->
-                        <div x-show="submitted" x-transition class="bg-green-500/20 border border-green-500 rounded-lg p-4 text-green-400">
-                            <svg class="w-6 h-6 inline-block mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <div x-show="submitted" x-transition class="bg-green-500/20 border border-green-500 rounded-lg p-4 text-green-400 flex items-center justify-center" style="display: none;">
+                            <svg class="w-6 h-6 inline-block mr-2 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                             </svg>
-                            {{ __('contact.form_success_message') }}
+                            <span>{{ __('contact.form_success_message') }}</span>
                         </div>
                     </div>
                 </form>
@@ -117,4 +176,3 @@
         </div>
     </div>
 </section>
-
