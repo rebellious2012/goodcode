@@ -14,7 +14,7 @@ return [
     'footer_contact_email' => 'support@codelevator.top',
     'footer_contact_phone' => '+48 883-219-797',
     'footer_contact_location' => 'Polska',
-    'footer_copyright' => '© 2025 CodElevator Solutions. Wszelkie prawa zastrzeżone.',
+    'footer_copyright' => '© 2025 CodElevator. Wszelkie prawa zastrzeżone.',
     'footer_privacy' => 'Polityka Prywatności',
     'footer_terms' => 'Regulamin',
 ];

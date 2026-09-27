@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'title' => 'About Us - CodElevator Solutions | Our Mission, Team and Values',
+    'title' => 'About Us - CodElevator | Our Mission, Team and Values',
     'meta_description' => 'A compact team of Senior specialists with a deep background in real business. We don\'t inflate staff — we create effective IT solutions without intermediaries and bureaucracy.',
     'hero_title' => 'About',
-    'hero_highlight' => 'CodElevator Solutions',
+    'hero_highlight' => 'CodElevator',
     'hero_subtitle' => 'A compact team of Senior specialists with a deep background in real business. We don\'t inflate staff — we create effective IT solutions without intermediaries and bureaucracy.',
     'mission_title' => 'Our Approach and Mission',
     'mission_p1' => 'At CodElevator, we believe that technology should bring profit, not just exist. Our mission is to turn complex business challenges into clear and reliable digital tools. We look at code through the eyes of a business owner, focusing on product logic, efficiency, and ROI.',

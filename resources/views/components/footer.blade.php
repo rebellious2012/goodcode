@@ -4,7 +4,7 @@
             <!-- Company Info -->
             <div class="col-span-1 md:col-span-2">
                 <h3 class="text-2xl font-bold text-white mb-4">
-                    CodElevator<span class="text-bright-indigo">Solutions</span>
+                    Cod<span class="text-bright-indigo">Elevator</span>
                 </h3>
                 <p class="text-gray-400 mb-6 max-w-md">
                     {{ __('app.footer_slogan') }}

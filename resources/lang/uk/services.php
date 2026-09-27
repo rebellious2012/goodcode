@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Наші послуги — CodElevator Solutions | Розробка CRM, ERP, SEO та ШІ-рішень',
+    'title' => 'Наші послуги — CodElevator | Розробка CRM, ERP, SEO та ШІ-рішень',
     'meta_description' => 'Комплексні технологічні рішення, розроблені для прискорення зростання вашого бізнесу та процесу цифрової трансформації.',
     'hero_title' => 'Наші',
     'hero_highlight' => 'Послуги',

@@ -1,10 +1,10 @@
 <?php
 
 return [
-    'title' => 'O nas - CodElevator Solutions | Nasza misja, zespół i wartości',
+    'title' => 'O nas - CodElevator | Nasza misja, zespół i wartości',
     'meta_description' => 'Kompaktowy zespół specjalistów Senior z dużym doświadczeniem w realnym biznesie. Nie rozdmuchujemy etatów — tworzymy efektywne rozwiązania IT bez pośredników i biurokracji.',
     'hero_title' => 'O nas',
-    'hero_highlight' => 'CodElevator Solutions',
+    'hero_highlight' => 'CodElevator',
     'hero_subtitle' => 'Kompaktowy zespół specjalistów Senior z dużym doświadczeniem w realnym biznesie. Nie rozdmuchujemy etatów — tworzymy efektywne rozwiązania IT bez pośredników i biurokracji.',
     'mission_title' => 'Nasze podejście i misja',
     'mission_p1' => 'W CodElevator wierzymy, że technologie powinny przynosić zyski, a nie tylko istnieć. Naszą misją jest przekształcanie złożonych wyzwań biznesowych w zrozumiałe i niezawodne narzędzia cyfrowe. Patrzymy na kod oczami właściciela firmy, kładąc główny nacisk na logikę, wydajność i rentowność produktu.',

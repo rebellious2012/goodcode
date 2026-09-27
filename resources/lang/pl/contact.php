@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Kontakt - CodElevator Solutions | Porozmawiajmy o Twoim projekcie',
+    'title' => 'Kontakt - CodElevator | Porozmawiajmy o Twoim projekcie',
     'meta_description' => 'Gotowy na transformację swojego biznesu dzięki najnowocześniejszej technologii? Omówmy Twój projekt i sprawdźmy, jak możemy Ci pomóc.',
     'hero_title' => 'Skontaktuj się z',
     'hero_highlight' => 'Nami',

@@ -20,7 +20,7 @@
     <meta property="og:image" content="{{ asset('social_profile.png') }}" />
     <meta property="og:type" content="@yield('og_type', 'website')" />
     <meta property="og:locale" content="{{ \App\Helpers\SeoHelper::ogLocale() }}" />
-    <meta property="og:site_name" content="CodElevator Solutions" />
+    <meta property="og:site_name" content="CodElevator" />
 
     {{-- Twitter Card --}}
     <meta name="twitter:card" content="summary_large_image" />
@@ -28,29 +28,7 @@
     <meta name="twitter:description" content="@yield('meta_description', __('home.meta_description'))" />
     <meta name="twitter:image" content="{{ asset('social_profile.png') }}" />
 
-    {{-- JSON-LD Structured Data: Organization --}}
-    <script type="application/ld+json">
-    @php
-    $orgSchema = [
-        '@context' => 'https://schema.org',
-        '@type' => 'Organization',
-        'name' => 'CodElevator Solutions',
-        'url' => url('/'),
-        'logo' => asset('codelevator_logo_v2.png'),
-        'contactPoint' => [
-            '@type' => 'ContactPoint',
-            'telephone' => '+48 883-219-797',
-            'contactType' => 'sales',
-            'email' => 'support@codelevator.top',
-        ],
-        'address' => [
-            '@type' => 'PostalAddress',
-            'addressCountry' => 'PL',
-        ],
-    ];
-    @endphp
-    {!! json_encode($orgSchema, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) !!}
-    </script>
+    @include('components.partials.organization-schema')
 
     {{-- JSON-LD: WebSite --}}
     <script type="application/ld+json">
@@ -58,7 +36,7 @@
     $websiteSchema = [
         '@context' => 'https://schema.org',
         '@type' => 'WebSite',
-        'name' => 'CodElevator Solutions',
+        'name' => 'CodElevator',
         'url' => url('/'),
         'potentialAction' => [
             '@type' => 'SearchAction',

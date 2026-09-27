@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Contact Us - CodElevator Solutions | Get in Touch for Your Next Project',
+    'title' => 'Contact Us - CodElevator | Get in Touch for Your Next Project',
     'meta_description' => 'Ready to transform your business with cutting-edge technology? Let\'s discuss your project and explore how we can help you achieve your goals.',
 
     // Hero

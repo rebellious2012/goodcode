@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'title' => 'Our Services — CodElevator Solutions | CRM, ERP, SEO & AI Development',
+    'title' => 'Our Services — CodElevator | CRM, ERP, SEO & AI Development',
     'meta_description' => 'Comprehensive technology solutions designed to accelerate your business growth and digital transformation journey.',
     'hero_title' => 'Our',
     'hero_highlight' => 'Services',

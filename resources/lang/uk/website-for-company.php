@@ -11,14 +11,6 @@ return [
     'hero_cta_primary' => 'Отримати безкоштовний розрахунок',
     'hero_cta_secondary' => 'Як ми працюємо',
 
-    'stats_projects_num' => '100+',
-    'stats_projects_label' => 'Зданих проєктів',
-    'stats_years_num' => '10+',
-    'stats_years_label' => 'Років досвіду',
-    'stats_support_num' => '24/7',
-    'stats_support_label' => 'Техпідтримка',
-    'stats_return_num' => '98%',
-    'stats_return_label' => 'Задоволених клієнтів',
 
     'types_title' => 'Який сайт вам потрібен?',
     'types_subtitle' => 'Створюємо сайти для бізнесу будь-якого масштабу — від стартапів до великих підприємств.',
@@ -121,4 +113,5 @@ return [
 
     'breadcrumb_home' => 'Головна',
     'breadcrumb_services' => 'Послуги',
+    'about_note' => 'CodElevator — компанія, що створює сайти, вебзастосунки та ПЗ на замовлення для бізнесу. Спеціалізуємось на PHP, Laravel і Vue.js. Працюємо з клієнтами з України, Європи та США.',
 ];

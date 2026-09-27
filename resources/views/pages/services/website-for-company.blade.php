@@ -33,9 +33,7 @@ $serviceSchema = [
     'name' => __('website-for-company.title'),
     'description' => __('website-for-company.meta_description'),
     'provider' => [
-        '@type' => 'Organization',
-        'name' => 'CodElevator Solutions',
-        'url' => url('/'),
+        '@id' => 'https://codelevator.top/#organization',
     ],
     'areaServed' => 'PL',
     'availableLanguage' => ['en', 'pl', 'ru', 'uk'],
@@ -74,22 +72,12 @@ $serviceSchema = [
     </div>
 </section>
 
-{{-- ========== STATS ========== --}}
-<section class="py-14 bg-slate-900 border-y border-slate-800">
+{{-- ========== ABOUT NOTE ========== --}}
+<section class="py-10 bg-slate-900 border-b border-slate-800">
     <div class="container mx-auto px-4">
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-            @foreach([
-                [__('website-for-company.stats_projects_num'), __('website-for-company.stats_projects_label')],
-                [__('website-for-company.stats_years_num'), __('website-for-company.stats_years_label')],
-                [__('website-for-company.stats_support_num'), __('website-for-company.stats_support_label')],
-                [__('website-for-company.stats_return_num'), __('website-for-company.stats_return_label')],
-            ] as [$num, $label])
-            <div class="text-center">
-                <div class="text-3xl font-bold text-bright-cyan mb-1">{{ $num }}</div>
-                <div class="text-gray-400 text-sm uppercase tracking-wider">{{ $label }}</div>
-            </div>
-            @endforeach
-        </div>
+        <p class="max-w-3xl mx-auto text-center text-lg text-gray-300 leading-relaxed border-l-2 border-bright-cyan/60 pl-6">
+            {{ __('website-for-company.about_note') }}
+        </p>
     </div>
 </section>
 

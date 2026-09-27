@@ -11,14 +11,6 @@ return [
     'hero_cta_primary' => 'Get a Free Quote',
     'hero_cta_secondary' => 'See How We Work',
 
-    'stats_projects_num' => '100+',
-    'stats_projects_label' => 'Projects delivered',
-    'stats_years_num' => '10+',
-    'stats_years_label' => 'Years of experience',
-    'stats_support_num' => '24/7',
-    'stats_support_label' => 'Technical support',
-    'stats_return_num' => '98%',
-    'stats_return_label' => 'Happy clients',
 
     'types_title' => 'What Kind of Website Do You Need?',
     'types_subtitle' => 'We build websites for businesses of any scale — from startups to large enterprises.',
@@ -121,4 +113,5 @@ return [
 
     'breadcrumb_home' => 'Home',
     'breadcrumb_services' => 'Services',
+    'about_note' => 'CodElevator is a company building websites, web applications and custom software for businesses. We specialize in PHP, Laravel and Vue.js. We work with clients worldwide, including Europe and the USA.',
 ];

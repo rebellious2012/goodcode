@@ -11,14 +11,6 @@ return [
     'hero_cta_primary' => 'Uzyskaj bezpłatną wycenę',
     'hero_cta_secondary' => 'Zobacz, jak pracujemy',
 
-    'stats_projects_num' => '100+',
-    'stats_projects_label' => 'Zrealizowanych projektów',
-    'stats_years_num' => '10+',
-    'stats_years_label' => 'Lat doświadczenia',
-    'stats_support_num' => '24/7',
-    'stats_support_label' => 'Wsparcie techniczne',
-    'stats_return_num' => '98%',
-    'stats_return_label' => 'Zadowolonych klientów',
 
     'types_title' => 'Jaką stronę internetową potrzebujesz?',
     'types_subtitle' => 'Tworzymy strony www dla firm o dowolnej skali — od startupów po duże przedsiębiorstwa.',
@@ -121,4 +113,5 @@ return [
 
     'breadcrumb_home' => 'Strona główna',
     'breadcrumb_services' => 'Usługi',
+    'about_note' => 'CodElevator to firma zajmująca się tworzeniem stron internetowych, aplikacji webowych i dedykowanego oprogramowania dla firm. Specjalizujemy się w PHP, Laravel i Vue.js. Współpracujemy z firmami z całej Polski oraz z klientami z zagranicy.',
 ];
