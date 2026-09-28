@@ -20,9 +20,7 @@
 2. Отправьте команду `/newbot`.
 3. Укажите видимое имя (например: `MyProject Leads`) и системный username (должен заканчиваться на `bot`, например: `myproject_leads_bot`).
 4. Скопируйте полученный **токен**:
-   ```text
-   8330607492:AAH8r9OCF_Nv4rmOCcKVxyNwwvO6-ojkrzI
-   ```
+********************************
 
 ### Шаг 1.2: Создать группу для заявок
 1. Создайте в Telegram новую группу (например: *«Заявки с сайта GoodCode»*).
@@ -52,8 +50,8 @@
 ### 2.1. Добавить переменные в `.env`
 В конец файла `.env` каждого проекта добавьте:
 ```env
-TELEGRAM_BOT_TOKEN=8330607492:AAH8r9OCF_Nv4rmOCcKVxyNwwvO6-ojkrzI
-TELEGRAM_CHAT_ID=-1003962830538
+TELEGRAM_BOT_TOKEN=**************************************
+TELEGRAM_CHAT_ID=***************************************
 TELEGRAM_VERIFY_SSL=true
 ```
 
@@ -301,8 +299,8 @@ if (!empty($_POST['website_hp'])) {
 }
 
 // 2. Настройки Telegram
-$token   = "8330607492:AAH8r9OCF_Nv4rmOCcKVxyNwwvO6-ojkrzI";
-$chat_id = "-1003962830538";
+$token   = "*********";
+$chat_id = "**************************";
 $site    = "EasyMoving"; // Название текущего сайта
 
 // 3. Сбор полей
@@ -441,5 +439,5 @@ document.getElementById('orderForm').addEventListener('submit', async function(e
 * **Решение:** В классе `TelegramService` уже встроен вызов `->withoutVerifying()` для локального окружения `app()->isLocal()`.
 
 ### 3. Бот не отправляет сообщение в группу (`chat not found` или `Unauthorized`)
-* Убедитесь, что ID группы указан **со знаком минус** (например, `-1003962830538`).
+* Убедитесь, что ID группы указан **со знаком минус** (например, `-***********`).
 * Убедитесь, что бот действительно состоит в этой группе и не был удален.
